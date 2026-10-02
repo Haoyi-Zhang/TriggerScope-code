@@ -1,0 +1,3 @@
+09-14 13:30:00.000 I/OTHER_TAG: CLASS=com.example.Ignored
+09-14 13:30:00.010 I/MY_SUPER_LOG: METHOD=com.example.MainActivity.onCreate()
+09-14 13:30:00.020 I/MY_SUPER_LOG: METHOD=com.example.MainActivity.arm()

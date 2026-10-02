@@ -1,0 +1,222 @@
+{
+  "part": "overlap",
+  "result": {
+    "ground_elements": 6,
+    "candidate_triples": 20,
+    "family_size_limit": 4,
+    "locally_admissible_families": 4090,
+    "serialized_families_rechecked": 4090,
+    "feasible_families": 1675,
+    "infeasible_families": 2415,
+    "compatible_selections": 1720,
+    "positive_witnesses_rechecked": 1720,
+    "serialized_control_witnesses_rechecked": 1,
+    "max_tokens": 4,
+    "views_per_instance": 6,
+    "disagreements": 0,
+    "token_view_degree": 3,
+    "canonical_serialization": true,
+    "unordered_input_checked": true,
+    "controls": [
+      {
+        "name": "exact-cover-unordered-input",
+        "input_elements": [
+          5,
+          3,
+          1,
+          4,
+          2,
+          0
+        ],
+        "input_triples": [
+          [
+            5,
+            4,
+            3
+          ],
+          [
+            2,
+            0,
+            1
+          ],
+          [
+            4,
+            3,
+            0
+          ]
+        ],
+        "elements": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "tokens": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            3,
+            4
+          ],
+          [
+            3,
+            4,
+            5
+          ]
+        ],
+        "input_to_canonical": [
+          2,
+          0,
+          1
+        ],
+        "canonical_to_input": [
+          1,
+          2,
+          0
+        ],
+        "views": [
+          [
+            0,
+            1
+          ],
+          [
+            0
+          ],
+          [
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2
+          ]
+        ],
+        "counts": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "compatible_selections": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "name": "locally-valid-no-cover-unordered-input",
+        "input_elements": [
+          5,
+          3,
+          1,
+          4,
+          2,
+          0
+        ],
+        "input_triples": [
+          [
+            2,
+            1,
+            0
+          ],
+          [
+            4,
+            3,
+            0
+          ],
+          [
+            5,
+            1,
+            3
+          ]
+        ],
+        "elements": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "tokens": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            3,
+            4
+          ],
+          [
+            1,
+            3,
+            5
+          ]
+        ],
+        "input_to_canonical": [
+          0,
+          1,
+          2
+        ],
+        "canonical_to_input": [
+          0,
+          1,
+          2
+        ],
+        "views": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "counts": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "compatible_selections": []
+      }
+    ]
+  },
+  "cpu_seconds": 0.31072015100000006,
+  "wall_seconds": 0.3109987729999375,
+  "peak_rss_kib": 95404,
+  "workers": 1
+}

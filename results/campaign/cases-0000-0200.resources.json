@@ -1,0 +1,13 @@
+{
+  "start": 0,
+  "stop": 200,
+  "cases": 200,
+  "workers": 1,
+  "cpu_seconds": 1.357341066,
+  "wall_seconds": 1.3575372740001512,
+  "max_case_cpu_seconds": 0.02104214800000004,
+  "peak_rss_kib": 95148,
+  "layered_nodes": 33436,
+  "checker_steps": 125294,
+  "failures": 0
+}

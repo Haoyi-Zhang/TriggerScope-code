@@ -1,0 +1,23 @@
+{
+  "events": [
+    {"kind": 0, "value": 0, "context": 0, "bucket": 0},
+    {"kind": 1, "value": 1, "context": 0, "bucket": 1},
+    {"kind": 2, "value": 0, "context": 0, "bucket": 2},
+    {"kind": 3, "value": 1, "context": 0, "bucket": 3},
+    {"kind": 4, "value": 0, "context": 0, "bucket": 0},
+    {"kind": 5, "value": 1, "context": 0, "bucket": 1},
+    {"kind": 6, "value": 0, "context": 0, "bucket": 2},
+    {"kind": 7, "value": 1, "context": 0, "bucket": 3}
+  ],
+  "monitors": [
+    {"op": "ever", "guard": {"field": "kind", "equals": 1}},
+    {"op": "before", "guard": {"field": "kind", "equals": 0}, "then": {"field": "kind", "equals": 1}},
+    {"op": "last", "guard": {"field": "kind", "equals": 2}},
+    {"op": "count", "guard": {"field": "value", "equals": 1}, "threshold": 2}
+  ],
+  "triggers": [0, 1, ["and", 0, 2], 3],
+  "horizon": 4,
+  "min_length": 1,
+  "environment_locked": true,
+  "report_modulus": 2
+}

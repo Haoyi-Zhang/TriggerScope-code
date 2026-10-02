@@ -1,0 +1,2 @@
+09-14 12:05:00.000 I/OTHER_TAG: METHOD=com.example.MainActivity.arm()
+09-14 12:05:00.010 I/MY_SUPER_LOG: METHOD=com.example.MainActivity.onCreate()

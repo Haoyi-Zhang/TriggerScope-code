@@ -1,0 +1,28 @@
+{
+  "deterministic_case_rows_equal": 2448,
+  "campaign_summary_equal": true,
+  "shipped_certificates_replayed": true,
+  "regenerated_certificates_replayed": true,
+  "shipped_and_regenerated_replay_equal": true,
+  "finite_test_results_equal": true,
+  "finite_test_groups_equal": 8,
+  "finite_test_groups": [
+    "capacity",
+    "source",
+    "mutations",
+    "controls",
+    "binding",
+    "overlap",
+    "stress",
+    "androlog"
+  ],
+  "checker_import_isolation": true,
+  "chunk_size": 200,
+  "wall_seconds_including_process_startup": 44.08603610299997,
+  "status": "commands-and-scientific-results-reproduced; not a mechanized general proof",
+  "outer_elapsed_wall_seconds": 44.65,
+  "outer_user_plus_system_cpu_seconds": 54.89,
+  "outer_maximum_resident_set_kib": 108056,
+  "recheck_date": "2026-09-26",
+  "note": "Timing and RSS are descriptive. This run started from a clean extraction of the standalone repository ZIP, used PYTHONDONTWRITEBYTECODE=1 and one worker, and wrote to a new output directory. It compared the exact campaign CSV schema and every deterministic row/summary field, replayed both shipped and regenerated certificate packets, and compared all eight finite-test result objects, including canonical overlap readback and the branch-specific aggregate/FIFO controls."
+}

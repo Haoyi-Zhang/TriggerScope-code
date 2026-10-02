@@ -1,0 +1,126 @@
+{
+  "cases": 2448,
+  "generated_instances": 2400,
+  "authored_fixtures": 48,
+  "distinct_structural_models": 1944,
+  "verdicts": {
+    "forced-complete": 409,
+    "ambiguous": 817,
+    "forced-incomplete": 1222
+  },
+  "by_family": {
+    "balanced": {
+      "forced-complete": 82,
+      "ambiguous": 163,
+      "forced-incomplete": 245
+    },
+    "compound": {
+      "forced-complete": 81,
+      "ambiguous": 164,
+      "forced-incomplete": 245
+    },
+    "environment": {
+      "forced-complete": 82,
+      "ambiguous": 162,
+      "forced-incomplete": 245
+    },
+    "rare-event": {
+      "forced-complete": 82,
+      "ambiguous": 165,
+      "forced-incomplete": 243
+    },
+    "temporal": {
+      "forced-complete": 82,
+      "ambiguous": 163,
+      "forced-incomplete": 244
+    }
+  },
+  "by_origin": {
+    "author-constructed schema fixture": {
+      "forced-complete": 9,
+      "ambiguous": 15,
+      "forced-incomplete": 24
+    },
+    "generated": {
+      "forced-complete": 400,
+      "ambiguous": 802,
+      "forced-incomplete": 1198
+    }
+  },
+  "by_report_mode": {
+    "census": {
+      "forced-complete": 408,
+      "ambiguous": 0,
+      "forced-incomplete": 0
+    },
+    "class-complete": {
+      "forced-complete": 1,
+      "ambiguous": 407,
+      "forced-incomplete": 0
+    },
+    "class-exclusion": {
+      "forced-complete": 0,
+      "ambiguous": 408,
+      "forced-incomplete": 0
+    },
+    "empty": {
+      "forced-complete": 0,
+      "ambiguous": 0,
+      "forced-incomplete": 408
+    },
+    "one-per-bucket": {
+      "forced-complete": 0,
+      "ambiguous": 2,
+      "forced-incomplete": 406
+    },
+    "seeded-omission": {
+      "forced-complete": 0,
+      "ambiguous": 0,
+      "forced-incomplete": 408
+    }
+  },
+  "baselines": {
+    "bucket_full": {
+      "assertions": 1891,
+      "not_entailed": 1483,
+      "false_for_constructed_report": 1186
+    },
+    "count_threshold": {
+      "assertions": 1226,
+      "not_entailed": 817,
+      "false_for_constructed_report": 410
+    },
+    "marginal_possible": {
+      "assertions": 2039,
+      "not_entailed": 1630,
+      "false_for_constructed_report": 1223
+    },
+    "full_possible": {
+      "assertions": 1226,
+      "not_entailed": 817,
+      "false_for_constructed_report": 410
+    }
+  },
+  "ablation_disagreements": {
+    "no_hall_disagreement": 1222,
+    "no_exclusion_disagreement": 838
+  },
+  "layered_nodes": 281104,
+  "checker_steps": 1194010,
+  "cpu_seconds": 8.216842136,
+  "wall_seconds": 8.217870559999938,
+  "peak_rss_kib": 95148,
+  "max_case_cpu_seconds": 0.06146584700000002,
+  "max_nodes": 545,
+  "max_states": 25,
+  "max_classes": 16,
+  "max_count_bits": 49,
+  "max_certificate_bytes": 30151,
+  "total_certificate_bytes": 12474621,
+  "producer_certificate_cpu_seconds": 0.10109773800000244,
+  "checker_cpu_seconds": 2.8387209130000044,
+  "per_outcome_flow_cpu_seconds": 2.2793475829999963,
+  "circulation_disagreements": 0,
+  "actual_outcome_exclusions": 0,
+  "failures": 0
+}

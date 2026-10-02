@@ -1,0 +1,108 @@
+{
+  "part": "androlog",
+  "result": {
+    "upstream_format": "AndroLog raw probe labels",
+    "fixture_origin": "authored synthetic text; no APK/device execution",
+    "input_sessions": 7,
+    "distinct_traces": 6,
+    "duplicate_sessions_removed": 1,
+    "count_report": [
+      0,
+      1,
+      3,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "classes": 10,
+    "spectrum": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "verdict": "forced-incomplete",
+    "actual_outcome": 1,
+    "probe_types": [
+      "STATEMENT",
+      "METHOD",
+      "CLASS",
+      "ACTIVITY",
+      "SERVICE",
+      "BROADCASTRECEIVER",
+      "CONTENTPROVIDER"
+    ],
+    "rejected_controls": [
+      "unknown-probe",
+      "unsupported-type",
+      "malformed-identifier-line",
+      "nul-line",
+      "invalid-log-identifier",
+      "over-horizon",
+      "empty-directory",
+      "oversized-session-file",
+      "aggregate-byte-limit",
+      "symlink-entry",
+      "non-regular-entry",
+      "excessive-file-count",
+      "invalid-utf8",
+      "non-injective-probe-map",
+      "undeclared-event-map",
+      "noninteger-probe-map-value",
+      "unnormalized-probe-map-key",
+      "invalid-model-schema",
+      "oversized-config-file",
+      "symlink-config-file",
+      "nonobject-config",
+      "invalid-json-config"
+    ],
+    "portable_rejected_control_count": 22,
+    "aggregate_limit_control": {
+      "per_file_limit_bytes": 256,
+      "aggregate_limit_bytes": 400,
+      "exact_limit_file_sizes": [
+        200,
+        200
+      ],
+      "over_limit_file_sizes": [
+        200,
+        201
+      ],
+      "exact_limit_accepted": true,
+      "over_one_byte_rejected": true,
+      "same_input_accepted_at_raised_limit": true,
+      "individual_files_parse_as_valid_traces": true,
+      "aggregate_error": "session directory aggregate input exceeds 400 bytes",
+      "aggregate_guard_removal_would_fail_test": true
+    },
+    "fifo_path_controls": {
+      "supported": true,
+      "subprocess_timeout_seconds": 2,
+      "session_path": {
+        "descriptor_count_unchanged": true,
+        "message": "session file must be a regular, non-symlink file",
+        "status": "InvalidLog"
+      },
+      "configuration_path": {
+        "descriptor_count_unchanged": true,
+        "message": "test configuration must be a regular, non-symlink file",
+        "status": "InvalidLog"
+      },
+      "passed_by_explicit_invalidlog_not_timeout": true
+    },
+    "accepted_anchoring_control": true,
+    "changed_report_binding_rejected": true,
+    "byte_distinct_duplicate_files": true,
+    "normalized_duplicate_trace_equal": true,
+    "checker_steps": 696,
+    "nodes": 129,
+    "changed_report_rejected_steps": 616
+  },
+  "cpu_seconds": 0.6378730989999999,
+  "wall_seconds": 1.8521895680000284,
+  "peak_rss_kib": 96044,
+  "workers": 1
+}

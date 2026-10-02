@@ -1,0 +1,2 @@
+09-14 12:02:00.000 I/MY_SUPER_LOG: CLASS=com.example.MainActivity
+09-14 12:02:00.010 I/MY_SUPER_LOG: SERVICE=com.example.SyncService

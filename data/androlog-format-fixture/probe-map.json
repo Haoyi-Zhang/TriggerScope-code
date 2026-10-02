@@ -1,0 +1,10 @@
+{
+  "METHOD=com.example.MainActivity.onCreate()": 0,
+  "METHOD=com.example.MainActivity.arm()": 1,
+  "ACTIVITY=com.example.MainActivity": 2,
+  "STATEMENT=<com.example.MainActivity: void arm()>:$r0 = 1": 3,
+  "CLASS=com.example.MainActivity": 4,
+  "SERVICE=com.example.SyncService": 5,
+  "BROADCASTRECEIVER=com.example.BootReceiver": 6,
+  "CONTENTPROVIDER=com.example.StateProvider": 7
+}

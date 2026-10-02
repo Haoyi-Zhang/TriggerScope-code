@@ -1,0 +1,2 @@
+09-14 12:03:00.000 I/MY_SUPER_LOG: STATEMENT=<com.example.MainActivity: void arm()>:$r0 = 1|unit-index=7
+09-14 12:03:00.010 I/MY_SUPER_LOG: METHOD=com.example.MainActivity.arm()

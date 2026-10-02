@@ -1,0 +1,517 @@
+{
+  "part": "controls",
+  "result": [
+    {
+      "name": "hall-bottleneck",
+      "model": {
+        "events": [
+          {
+            "kind": 0,
+            "value": 0,
+            "context": 0,
+            "bucket": 0
+          },
+          {
+            "kind": 1,
+            "value": 1,
+            "context": 0,
+            "bucket": 0
+          },
+          {
+            "kind": 2,
+            "value": 0,
+            "context": 0,
+            "bucket": 0
+          },
+          {
+            "kind": 3,
+            "value": 1,
+            "context": 0,
+            "bucket": 1
+          },
+          {
+            "kind": 4,
+            "value": 0,
+            "context": 0,
+            "bucket": 1
+          },
+          {
+            "kind": 5,
+            "value": 1,
+            "context": 0,
+            "bucket": 1
+          }
+        ],
+        "monitors": [
+          {
+            "op": "ever",
+            "guard": {
+              "field": "kind",
+              "equals": 0
+            }
+          },
+          {
+            "op": "ever",
+            "guard": {
+              "field": "kind",
+              "equals": 1
+            }
+          },
+          {
+            "op": "ever",
+            "guard": {
+              "field": "kind",
+              "equals": 2
+            }
+          }
+        ],
+        "triggers": [
+          0,
+          1,
+          2
+        ],
+        "horizon": 1,
+        "min_length": 1,
+        "environment_locked": false,
+        "report_modulus": 1
+      },
+      "report": [
+        2,
+        2
+      ],
+      "certificate": {
+        "semantics": {
+          "layers": [
+            [
+              [
+                [
+                  -1,
+                  -1,
+                  0,
+                  0,
+                  0
+                ],
+                1,
+                []
+              ]
+            ],
+            [
+              [
+                [
+                  -1,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                1,
+                [
+                  2
+                ]
+              ],
+              [
+                [
+                  -1,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                1,
+                [
+                  1
+                ]
+              ],
+              [
+                [
+                  -1,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                1,
+                [
+                  0
+                ]
+              ],
+              [
+                [
+                  -1,
+                  1,
+                  0,
+                  0,
+                  0
+                ],
+                3,
+                [
+                  3
+                ]
+              ]
+            ]
+          ],
+          "classes": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "representatives": [
+            [
+              0
+            ],
+            [
+              1
+            ],
+            [
+              2
+            ],
+            [
+              3
+            ]
+          ],
+          "buckets": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "capacity": [
+            [
+              1,
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              3
+            ]
+          ]
+        },
+        "count_report": [
+          2,
+          2
+        ],
+        "prefix_proof": {
+          "prefix": 2,
+          "matching": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "cut": [
+            0,
+            1,
+            2
+          ]
+        },
+        "spectrum": [
+          0,
+          1,
+          2
+        ],
+        "verdict": "forced-incomplete",
+        "witnesses": [
+          {
+            "outcome": 0,
+            "allocation": [
+              [
+                0,
+                1,
+                1,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ]
+            ]
+          },
+          {
+            "outcome": 2,
+            "allocation": [
+              [
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                2
+              ]
+            ]
+          }
+        ]
+      },
+      "check": {
+        "verdict": "forced-incomplete",
+        "spectrum": [
+          0,
+          1,
+          2
+        ],
+        "nodes": 5,
+        "states": 5,
+        "classes": 4,
+        "buckets": 2,
+        "checker_steps": 14,
+        "max_count_bits": 2
+      },
+      "compatible_subset_count": 9
+    },
+    {
+      "name": "indeterminate-report",
+      "model": {
+        "events": [
+          {
+            "kind": 0,
+            "value": 0,
+            "context": 0,
+            "bucket": 0
+          },
+          {
+            "kind": 1,
+            "value": 1,
+            "context": 0,
+            "bucket": 0
+          },
+          {
+            "kind": 2,
+            "value": 0,
+            "context": 0,
+            "bucket": 1
+          },
+          {
+            "kind": 3,
+            "value": 1,
+            "context": 0,
+            "bucket": 1
+          }
+        ],
+        "monitors": [
+          {
+            "op": "last",
+            "guard": {
+              "field": "value",
+              "equals": 1
+            }
+          }
+        ],
+        "triggers": [
+          0
+        ],
+        "horizon": 1,
+        "min_length": 1,
+        "environment_locked": false,
+        "report_modulus": 1
+      },
+      "report": [
+        1,
+        1
+      ],
+      "certificate": {
+        "semantics": {
+          "layers": [
+            [
+              [
+                [
+                  -1,
+                  -1,
+                  0
+                ],
+                1,
+                []
+              ]
+            ],
+            [
+              [
+                [
+                  -1,
+                  0,
+                  0
+                ],
+                1,
+                [
+                  0
+                ]
+              ],
+              [
+                [
+                  -1,
+                  0,
+                  1
+                ],
+                1,
+                [
+                  1
+                ]
+              ],
+              [
+                [
+                  -1,
+                  1,
+                  0
+                ],
+                1,
+                [
+                  2
+                ]
+              ],
+              [
+                [
+                  -1,
+                  1,
+                  1
+                ],
+                1,
+                [
+                  3
+                ]
+              ]
+            ]
+          ],
+          "classes": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "representatives": [
+            [
+              0
+            ],
+            [
+              1
+            ]
+          ],
+          "buckets": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "capacity": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        "count_report": [
+          1,
+          1
+        ],
+        "prefix_proof": {
+          "prefix": 2,
+          "matching": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "cut": []
+        },
+        "spectrum": [
+          0,
+          1,
+          2
+        ],
+        "verdict": "ambiguous",
+        "witnesses": [
+          {
+            "outcome": 0,
+            "allocation": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                1
+              ]
+            ]
+          },
+          {
+            "outcome": 2,
+            "allocation": [
+              [
+                0,
+                1
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          }
+        ]
+      },
+      "check": {
+        "verdict": "ambiguous",
+        "spectrum": [
+          0,
+          1,
+          2
+        ],
+        "nodes": 5,
+        "states": 5,
+        "classes": 2,
+        "buckets": 2,
+        "checker_steps": 8,
+        "max_count_bits": 1
+      },
+      "compatible_subset_count": 4
+    }
+  ],
+  "cpu_seconds": 0.0018258760000000596,
+  "wall_seconds": 0.0018228589999580436,
+  "peak_rss_kib": 92596,
+  "workers": 1
+}

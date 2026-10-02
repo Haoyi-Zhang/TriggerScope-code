@@ -1,0 +1,43 @@
+{
+  "part": "capacity",
+  "result": {
+    "matrices": 1188,
+    "count_reports": 28836,
+    "concrete_subsets": 227556,
+    "witnesses_checked": 45944,
+    "shapes": [
+      {
+        "buckets": 2,
+        "classes": 3,
+        "cell_values": [
+          0,
+          1,
+          2
+        ],
+        "matrices": 512,
+        "count_reports": 9584,
+        "concrete_subsets": 110592,
+        "witnesses_checked": 19456
+      },
+      {
+        "buckets": 3,
+        "classes": 2,
+        "cell_values": [
+          0,
+          1,
+          2
+        ],
+        "matrices": 676,
+        "count_reports": 19252,
+        "concrete_subsets": 116964,
+        "witnesses_checked": 26488
+      }
+    ],
+    "disagreements": 0,
+    "witness_disagreements": 0
+  },
+  "cpu_seconds": 2.14623595,
+  "wall_seconds": 2.1488686229999985,
+  "peak_rss_kib": 94384,
+  "workers": 1
+}

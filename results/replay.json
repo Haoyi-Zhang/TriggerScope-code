@@ -1,0 +1,9 @@
+{
+  "certificates_replayed": 2448,
+  "checker_steps": 1194010,
+  "nodes_replayed": 281104,
+  "cpu_seconds": 3.9652959950000004,
+  "peak_rss_kib": 104352,
+  "producer_imported": false,
+  "failures": 0
+}

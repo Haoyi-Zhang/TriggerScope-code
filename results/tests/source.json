@@ -1,0 +1,15 @@
+{
+  "part": "source",
+  "result": {
+    "tiny_models": 20832,
+    "legal_words_evaluated": 113088,
+    "nodes_replayed": 110080,
+    "checker_steps": 224716,
+    "disagreements": 0,
+    "scope": "12 primitives; each single with identity/negation; every ordered pair with five listed output forms; H=0..3; all valid low=0/1; context lock both; modulus 1/2; fixed binary alphabet"
+  },
+  "cpu_seconds": 4.087056745,
+  "wall_seconds": 4.087634383000022,
+  "peak_rss_kib": 93352,
+  "workers": 1
+}

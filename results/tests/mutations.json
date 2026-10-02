@@ -1,0 +1,4390 @@
+{
+  "part": "mutations",
+  "result": {
+    "rejected_mutations": 729,
+    "accepted_equivalent_controls": 55,
+    "records": [
+      {
+        "case_id": "generated-0001",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0001",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 37
+      },
+      {
+        "case_id": "generated-0001",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0001",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 1
+      },
+      {
+        "case_id": "generated-0001",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0001",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0001",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0001",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0001",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0001",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 132
+      },
+      {
+        "case_id": "generated-0001",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0001",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 132
+      },
+      {
+        "case_id": "generated-0001",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 132
+      },
+      {
+        "case_id": "generated-0002",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0002",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 41
+      },
+      {
+        "case_id": "generated-0002",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0002",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 1
+      },
+      {
+        "case_id": "generated-0002",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 60
+      },
+      {
+        "case_id": "generated-0002",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 60
+      },
+      {
+        "case_id": "generated-0002",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 60
+      },
+      {
+        "case_id": "generated-0002",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 60
+      },
+      {
+        "case_id": "generated-0002",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 60
+      },
+      {
+        "case_id": "generated-0002",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 60
+      },
+      {
+        "case_id": "generated-0002",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 74
+      },
+      {
+        "case_id": "generated-0002",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 60
+      },
+      {
+        "case_id": "generated-0002",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 74
+      },
+      {
+        "case_id": "generated-0002",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 74
+      },
+      {
+        "case_id": "generated-0003",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0003",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 37
+      },
+      {
+        "case_id": "generated-0003",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0003",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 1
+      },
+      {
+        "case_id": "generated-0003",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0003",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0003",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0003",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0003",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0003",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 132
+      },
+      {
+        "case_id": "generated-0003",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0003",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 132
+      },
+      {
+        "case_id": "generated-0003",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 132
+      },
+      {
+        "case_id": "generated-0004",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0004",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 37
+      },
+      {
+        "case_id": "generated-0004",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0004",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 1
+      },
+      {
+        "case_id": "generated-0004",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0004",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0004",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0004",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0004",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0004",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0004",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 104
+      },
+      {
+        "case_id": "generated-0004",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0004",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 104
+      },
+      {
+        "case_id": "generated-0004",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 104
+      },
+      {
+        "case_id": "generated-0005",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0005",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 47
+      },
+      {
+        "case_id": "generated-0005",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0005",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 1
+      },
+      {
+        "case_id": "generated-0005",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0005",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0005",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0005",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0005",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0005",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 132
+      },
+      {
+        "case_id": "generated-0005",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 76
+      },
+      {
+        "case_id": "generated-0005",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 132
+      },
+      {
+        "case_id": "generated-0005",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 132
+      },
+      {
+        "case_id": "generated-0030",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0030",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 1281
+      },
+      {
+        "case_id": "generated-0030",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0030",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 1
+      },
+      {
+        "case_id": "generated-0030",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 1316
+      },
+      {
+        "case_id": "generated-0030",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 1316
+      },
+      {
+        "case_id": "generated-0030",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 1316
+      },
+      {
+        "case_id": "generated-0030",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 1316
+      },
+      {
+        "case_id": "generated-0030",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 1316
+      },
+      {
+        "case_id": "generated-0030",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 1331
+      },
+      {
+        "case_id": "generated-0030",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 1316
+      },
+      {
+        "case_id": "generated-0030",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 1331
+      },
+      {
+        "case_id": "generated-0030",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 1331
+      },
+      {
+        "case_id": "generated-0031",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0031",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 2009
+      },
+      {
+        "case_id": "generated-0031",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0031",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 1
+      },
+      {
+        "case_id": "generated-0031",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0031",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0031",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0031",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0031",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0031",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 2144
+      },
+      {
+        "case_id": "generated-0031",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0031",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 2144
+      },
+      {
+        "case_id": "generated-0031",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 2144
+      },
+      {
+        "case_id": "generated-0032",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0032",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 2009
+      },
+      {
+        "case_id": "generated-0032",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0032",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 1
+      },
+      {
+        "case_id": "generated-0032",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0032",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0032",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0032",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0032",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0032",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0032",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 2114
+      },
+      {
+        "case_id": "generated-0032",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0032",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 2114
+      },
+      {
+        "case_id": "generated-0032",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 2114
+      },
+      {
+        "case_id": "generated-0033",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0033",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 2027
+      },
+      {
+        "case_id": "generated-0033",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0033",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 1
+      },
+      {
+        "case_id": "generated-0033",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0033",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0033",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0033",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0033",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0033",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 2144
+      },
+      {
+        "case_id": "generated-0033",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0033",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 2144
+      },
+      {
+        "case_id": "generated-0033",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 2144
+      },
+      {
+        "case_id": "generated-0034",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0034",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 1281
+      },
+      {
+        "case_id": "generated-0034",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0034",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 1
+      },
+      {
+        "case_id": "generated-0034",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 1316
+      },
+      {
+        "case_id": "generated-0034",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 1316
+      },
+      {
+        "case_id": "generated-0034",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 1316
+      },
+      {
+        "case_id": "generated-0034",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 1316
+      },
+      {
+        "case_id": "generated-0034",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 1316
+      },
+      {
+        "case_id": "generated-0034",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 1331
+      },
+      {
+        "case_id": "generated-0034",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 1316
+      },
+      {
+        "case_id": "generated-0034",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 1331
+      },
+      {
+        "case_id": "generated-0034",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 1331
+      },
+      {
+        "case_id": "generated-0035",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0035",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 2018
+      },
+      {
+        "case_id": "generated-0035",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0035",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 1
+      },
+      {
+        "case_id": "generated-0035",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0035",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0035",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0035",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0035",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0035",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 2164
+      },
+      {
+        "case_id": "generated-0035",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 2084
+      },
+      {
+        "case_id": "generated-0035",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 2164
+      },
+      {
+        "case_id": "generated-0035",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 2164
+      },
+      {
+        "case_id": "generated-0481",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0481",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 53
+      },
+      {
+        "case_id": "generated-0481",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0481",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0481",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-0481",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-0481",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-0481",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-0481",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-0481",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 68
+      },
+      {
+        "case_id": "generated-0481",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-0481",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 68
+      },
+      {
+        "case_id": "generated-0481",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 68
+      },
+      {
+        "case_id": "generated-0482",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0482",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 33
+      },
+      {
+        "case_id": "generated-0482",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0482",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0482",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 36
+      },
+      {
+        "case_id": "generated-0482",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 36
+      },
+      {
+        "case_id": "generated-0482",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 36
+      },
+      {
+        "case_id": "generated-0482",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 36
+      },
+      {
+        "case_id": "generated-0482",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 36
+      },
+      {
+        "case_id": "generated-0482",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 38
+      },
+      {
+        "case_id": "generated-0482",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 36
+      },
+      {
+        "case_id": "generated-0482",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 38
+      },
+      {
+        "case_id": "generated-0482",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 38
+      },
+      {
+        "case_id": "generated-0483",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0483",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 37
+      },
+      {
+        "case_id": "generated-0483",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0483",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 1
+      },
+      {
+        "case_id": "generated-0483",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 44
+      },
+      {
+        "case_id": "generated-0483",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 44
+      },
+      {
+        "case_id": "generated-0483",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 44
+      },
+      {
+        "case_id": "generated-0483",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 44
+      },
+      {
+        "case_id": "generated-0483",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 44
+      },
+      {
+        "case_id": "generated-0483",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 60
+      },
+      {
+        "case_id": "generated-0483",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 44
+      },
+      {
+        "case_id": "generated-0483",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 60
+      },
+      {
+        "case_id": "generated-0483",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 60
+      },
+      {
+        "case_id": "generated-0484",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0484",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 53
+      },
+      {
+        "case_id": "generated-0484",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0484",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0484",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-0484",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-0484",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-0484",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-0484",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-0484",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-0484",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 62
+      },
+      {
+        "case_id": "generated-0484",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-0484",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 62
+      },
+      {
+        "case_id": "generated-0484",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 62
+      },
+      {
+        "case_id": "generated-0485",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0485",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 41
+      },
+      {
+        "case_id": "generated-0485",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0485",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 1
+      },
+      {
+        "case_id": "generated-0485",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 44
+      },
+      {
+        "case_id": "generated-0485",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 44
+      },
+      {
+        "case_id": "generated-0485",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 44
+      },
+      {
+        "case_id": "generated-0485",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 44
+      },
+      {
+        "case_id": "generated-0485",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 44
+      },
+      {
+        "case_id": "generated-0485",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 52
+      },
+      {
+        "case_id": "generated-0485",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 44
+      },
+      {
+        "case_id": "generated-0485",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 52
+      },
+      {
+        "case_id": "generated-0485",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 52
+      },
+      {
+        "case_id": "generated-0510",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0510",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 529
+      },
+      {
+        "case_id": "generated-0510",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0510",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0510",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 540
+      },
+      {
+        "case_id": "generated-0510",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 540
+      },
+      {
+        "case_id": "generated-0510",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 540
+      },
+      {
+        "case_id": "generated-0510",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 540
+      },
+      {
+        "case_id": "generated-0510",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 540
+      },
+      {
+        "case_id": "generated-0510",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 544
+      },
+      {
+        "case_id": "generated-0510",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 540
+      },
+      {
+        "case_id": "generated-0510",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 544
+      },
+      {
+        "case_id": "generated-0510",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 544
+      },
+      {
+        "case_id": "generated-0511",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0511",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 1245
+      },
+      {
+        "case_id": "generated-0511",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0511",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 1
+      },
+      {
+        "case_id": "generated-0511",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 1284
+      },
+      {
+        "case_id": "generated-0511",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 1284
+      },
+      {
+        "case_id": "generated-0511",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 1284
+      },
+      {
+        "case_id": "generated-0511",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 1284
+      },
+      {
+        "case_id": "generated-0511",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 1284
+      },
+      {
+        "case_id": "generated-0511",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 1300
+      },
+      {
+        "case_id": "generated-0511",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 1284
+      },
+      {
+        "case_id": "generated-0511",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 1300
+      },
+      {
+        "case_id": "generated-0511",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 1300
+      },
+      {
+        "case_id": "generated-0512",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0512",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 1929
+      },
+      {
+        "case_id": "generated-0512",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0512",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0512",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 1988
+      },
+      {
+        "case_id": "generated-0512",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 1988
+      },
+      {
+        "case_id": "generated-0512",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 1988
+      },
+      {
+        "case_id": "generated-0512",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 1988
+      },
+      {
+        "case_id": "generated-0512",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 1988
+      },
+      {
+        "case_id": "generated-0512",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 1988
+      },
+      {
+        "case_id": "generated-0512",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 1996
+      },
+      {
+        "case_id": "generated-0512",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 1988
+      },
+      {
+        "case_id": "generated-0512",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 1996
+      },
+      {
+        "case_id": "generated-0512",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 1996
+      },
+      {
+        "case_id": "generated-0513",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0513",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 1029
+      },
+      {
+        "case_id": "generated-0513",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0513",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0513",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 1064
+      },
+      {
+        "case_id": "generated-0513",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 1064
+      },
+      {
+        "case_id": "generated-0513",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 1064
+      },
+      {
+        "case_id": "generated-0513",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 1064
+      },
+      {
+        "case_id": "generated-0513",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 1064
+      },
+      {
+        "case_id": "generated-0513",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 1080
+      },
+      {
+        "case_id": "generated-0513",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 1064
+      },
+      {
+        "case_id": "generated-0513",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 1080
+      },
+      {
+        "case_id": "generated-0513",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 1080
+      },
+      {
+        "case_id": "generated-0514",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0514",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 693
+      },
+      {
+        "case_id": "generated-0514",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0514",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0514",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 704
+      },
+      {
+        "case_id": "generated-0514",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 704
+      },
+      {
+        "case_id": "generated-0514",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 704
+      },
+      {
+        "case_id": "generated-0514",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 704
+      },
+      {
+        "case_id": "generated-0514",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 704
+      },
+      {
+        "case_id": "generated-0514",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 708
+      },
+      {
+        "case_id": "generated-0514",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 704
+      },
+      {
+        "case_id": "generated-0514",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 708
+      },
+      {
+        "case_id": "generated-0514",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 708
+      },
+      {
+        "case_id": "generated-0515",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0515",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 1821
+      },
+      {
+        "case_id": "generated-0515",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0515",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 1
+      },
+      {
+        "case_id": "generated-0515",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 1876
+      },
+      {
+        "case_id": "generated-0515",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 1876
+      },
+      {
+        "case_id": "generated-0515",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 1876
+      },
+      {
+        "case_id": "generated-0515",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 1876
+      },
+      {
+        "case_id": "generated-0515",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 1876
+      },
+      {
+        "case_id": "generated-0515",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 1896
+      },
+      {
+        "case_id": "generated-0515",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 1876
+      },
+      {
+        "case_id": "generated-0515",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 1896
+      },
+      {
+        "case_id": "generated-0515",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 1896
+      },
+      {
+        "case_id": "generated-0961",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0961",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 38
+      },
+      {
+        "case_id": "generated-0961",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0961",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0961",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0961",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0961",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0961",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0961",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0961",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 80
+      },
+      {
+        "case_id": "generated-0961",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0961",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 80
+      },
+      {
+        "case_id": "generated-0961",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 80
+      },
+      {
+        "case_id": "generated-0962",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0962",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 33
+      },
+      {
+        "case_id": "generated-0962",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0962",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0962",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 48
+      },
+      {
+        "case_id": "generated-0962",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 48
+      },
+      {
+        "case_id": "generated-0962",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 48
+      },
+      {
+        "case_id": "generated-0962",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 48
+      },
+      {
+        "case_id": "generated-0962",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 48
+      },
+      {
+        "case_id": "generated-0962",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 48
+      },
+      {
+        "case_id": "generated-0962",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 52
+      },
+      {
+        "case_id": "generated-0962",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 48
+      },
+      {
+        "case_id": "generated-0962",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 52
+      },
+      {
+        "case_id": "generated-0962",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 52
+      },
+      {
+        "case_id": "generated-0963",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0963",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 38
+      },
+      {
+        "case_id": "generated-0963",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0963",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0963",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0963",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0963",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0963",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0963",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0963",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 80
+      },
+      {
+        "case_id": "generated-0963",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0963",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 80
+      },
+      {
+        "case_id": "generated-0963",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 80
+      },
+      {
+        "case_id": "generated-0964",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0964",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 39
+      },
+      {
+        "case_id": "generated-0964",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0964",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 1
+      },
+      {
+        "case_id": "generated-0964",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0964",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0964",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0964",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0964",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0964",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0964",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 72
+      },
+      {
+        "case_id": "generated-0964",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0964",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 72
+      },
+      {
+        "case_id": "generated-0964",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 72
+      },
+      {
+        "case_id": "generated-0965",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0965",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 38
+      },
+      {
+        "case_id": "generated-0965",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0965",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0965",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0965",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0965",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0965",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0965",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0965",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 80
+      },
+      {
+        "case_id": "generated-0965",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 64
+      },
+      {
+        "case_id": "generated-0965",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 80
+      },
+      {
+        "case_id": "generated-0965",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 80
+      },
+      {
+        "case_id": "generated-0990",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0990",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 701
+      },
+      {
+        "case_id": "generated-0990",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0990",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0990",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 720
+      },
+      {
+        "case_id": "generated-0990",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 720
+      },
+      {
+        "case_id": "generated-0990",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 720
+      },
+      {
+        "case_id": "generated-0990",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 720
+      },
+      {
+        "case_id": "generated-0990",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 720
+      },
+      {
+        "case_id": "generated-0990",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 724
+      },
+      {
+        "case_id": "generated-0990",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 720
+      },
+      {
+        "case_id": "generated-0990",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 724
+      },
+      {
+        "case_id": "generated-0990",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 724
+      },
+      {
+        "case_id": "generated-0991",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0991",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 1197
+      },
+      {
+        "case_id": "generated-0991",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0991",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 1
+      },
+      {
+        "case_id": "generated-0991",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0991",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0991",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0991",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0991",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0991",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 1256
+      },
+      {
+        "case_id": "generated-0991",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0991",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 1256
+      },
+      {
+        "case_id": "generated-0991",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 1256
+      },
+      {
+        "case_id": "generated-0992",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0992",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 1193
+      },
+      {
+        "case_id": "generated-0992",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0992",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0992",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0992",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0992",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0992",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0992",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0992",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0992",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 1248
+      },
+      {
+        "case_id": "generated-0992",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0992",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 1248
+      },
+      {
+        "case_id": "generated-0992",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 1248
+      },
+      {
+        "case_id": "generated-0993",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0993",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 1193
+      },
+      {
+        "case_id": "generated-0993",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0993",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0993",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0993",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0993",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0993",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0993",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0993",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 1256
+      },
+      {
+        "case_id": "generated-0993",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0993",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 1256
+      },
+      {
+        "case_id": "generated-0993",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 1256
+      },
+      {
+        "case_id": "generated-0994",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0994",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 701
+      },
+      {
+        "case_id": "generated-0994",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0994",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0994",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 720
+      },
+      {
+        "case_id": "generated-0994",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 720
+      },
+      {
+        "case_id": "generated-0994",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 720
+      },
+      {
+        "case_id": "generated-0994",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 720
+      },
+      {
+        "case_id": "generated-0994",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 720
+      },
+      {
+        "case_id": "generated-0994",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 724
+      },
+      {
+        "case_id": "generated-0994",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 720
+      },
+      {
+        "case_id": "generated-0994",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 724
+      },
+      {
+        "case_id": "generated-0994",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 724
+      },
+      {
+        "case_id": "generated-0995",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-0995",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 1203
+      },
+      {
+        "case_id": "generated-0995",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-0995",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 1
+      },
+      {
+        "case_id": "generated-0995",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0995",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0995",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0995",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0995",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0995",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 1260
+      },
+      {
+        "case_id": "generated-0995",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 1240
+      },
+      {
+        "case_id": "generated-0995",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 1260
+      },
+      {
+        "case_id": "generated-0995",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 1260
+      },
+      {
+        "case_id": "generated-1441",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-1441",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 34
+      },
+      {
+        "case_id": "generated-1441",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-1441",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-1441",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 52
+      },
+      {
+        "case_id": "generated-1441",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 52
+      },
+      {
+        "case_id": "generated-1441",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 52
+      },
+      {
+        "case_id": "generated-1441",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 52
+      },
+      {
+        "case_id": "generated-1441",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 52
+      },
+      {
+        "case_id": "generated-1441",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 80
+      },
+      {
+        "case_id": "generated-1441",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 52
+      },
+      {
+        "case_id": "generated-1441",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 80
+      },
+      {
+        "case_id": "generated-1441",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 80
+      },
+      {
+        "case_id": "generated-1442",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-1442",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 43
+      },
+      {
+        "case_id": "generated-1442",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-1442",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 1
+      },
+      {
+        "case_id": "generated-1442",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 44
+      },
+      {
+        "case_id": "generated-1442",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 44
+      },
+      {
+        "case_id": "generated-1442",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 44
+      },
+      {
+        "case_id": "generated-1442",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 44
+      },
+      {
+        "case_id": "generated-1442",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 44
+      },
+      {
+        "case_id": "generated-1442",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 44
+      },
+      {
+        "case_id": "generated-1442",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 52
+      },
+      {
+        "case_id": "generated-1442",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 44
+      },
+      {
+        "case_id": "generated-1442",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 52
+      },
+      {
+        "case_id": "generated-1442",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 52
+      },
+      {
+        "case_id": "generated-1443",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-1443",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 33
+      },
+      {
+        "case_id": "generated-1443",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-1443",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-1443",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 52
+      },
+      {
+        "case_id": "generated-1443",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 52
+      },
+      {
+        "case_id": "generated-1443",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 52
+      },
+      {
+        "case_id": "generated-1443",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 52
+      },
+      {
+        "case_id": "generated-1443",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 52
+      },
+      {
+        "case_id": "generated-1443",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 80
+      },
+      {
+        "case_id": "generated-1443",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 52
+      },
+      {
+        "case_id": "generated-1443",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 80
+      },
+      {
+        "case_id": "generated-1443",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 80
+      },
+      {
+        "case_id": "generated-1444",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-1444",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 39
+      },
+      {
+        "case_id": "generated-1444",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-1444",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-1444",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-1444",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-1444",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-1444",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-1444",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-1444",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-1444",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 72
+      },
+      {
+        "case_id": "generated-1444",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-1444",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 72
+      },
+      {
+        "case_id": "generated-1444",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 72
+      },
+      {
+        "case_id": "generated-1445",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-1445",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 34
+      },
+      {
+        "case_id": "generated-1445",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-1445",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-1445",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-1445",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-1445",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-1445",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-1445",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-1445",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 88
+      },
+      {
+        "case_id": "generated-1445",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 56
+      },
+      {
+        "case_id": "generated-1445",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 88
+      },
+      {
+        "case_id": "generated-1445",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 88
+      },
+      {
+        "case_id": "generated-1470",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-1470",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 946
+      },
+      {
+        "case_id": "generated-1470",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-1470",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 1
+      },
+      {
+        "case_id": "generated-1470",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 968
+      },
+      {
+        "case_id": "generated-1470",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 968
+      },
+      {
+        "case_id": "generated-1470",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 968
+      },
+      {
+        "case_id": "generated-1470",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 968
+      },
+      {
+        "case_id": "generated-1470",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 968
+      },
+      {
+        "case_id": "generated-1470",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 976
+      },
+      {
+        "case_id": "generated-1470",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 968
+      },
+      {
+        "case_id": "generated-1470",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 976
+      },
+      {
+        "case_id": "generated-1470",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 976
+      },
+      {
+        "case_id": "generated-1471",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-1471",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 945
+      },
+      {
+        "case_id": "generated-1471",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-1471",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-1471",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 972
+      },
+      {
+        "case_id": "generated-1471",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 972
+      },
+      {
+        "case_id": "generated-1471",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 972
+      },
+      {
+        "case_id": "generated-1471",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 972
+      },
+      {
+        "case_id": "generated-1471",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 972
+      },
+      {
+        "case_id": "generated-1471",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 1004
+      },
+      {
+        "case_id": "generated-1471",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 972
+      },
+      {
+        "case_id": "generated-1471",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 1004
+      },
+      {
+        "case_id": "generated-1471",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 1004
+      },
+      {
+        "case_id": "generated-1472",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-1472",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 942
+      },
+      {
+        "case_id": "generated-1472",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-1472",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-1472",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 972
+      },
+      {
+        "case_id": "generated-1472",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 972
+      },
+      {
+        "case_id": "generated-1472",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 972
+      },
+      {
+        "case_id": "generated-1472",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 972
+      },
+      {
+        "case_id": "generated-1472",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 972
+      },
+      {
+        "case_id": "generated-1472",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 972
+      },
+      {
+        "case_id": "generated-1472",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 988
+      },
+      {
+        "case_id": "generated-1472",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 972
+      },
+      {
+        "case_id": "generated-1472",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 988
+      },
+      {
+        "case_id": "generated-1472",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 988
+      },
+      {
+        "case_id": "generated-1473",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-1473",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 943
+      },
+      {
+        "case_id": "generated-1473",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-1473",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 1
+      },
+      {
+        "case_id": "generated-1473",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 968
+      },
+      {
+        "case_id": "generated-1473",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 968
+      },
+      {
+        "case_id": "generated-1473",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 968
+      },
+      {
+        "case_id": "generated-1473",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 968
+      },
+      {
+        "case_id": "generated-1473",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 968
+      },
+      {
+        "case_id": "generated-1473",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 1000
+      },
+      {
+        "case_id": "generated-1473",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 968
+      },
+      {
+        "case_id": "generated-1473",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 1000
+      },
+      {
+        "case_id": "generated-1473",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 1000
+      },
+      {
+        "case_id": "generated-1474",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-1474",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 1042
+      },
+      {
+        "case_id": "generated-1474",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-1474",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-1474",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 1064
+      },
+      {
+        "case_id": "generated-1474",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 1064
+      },
+      {
+        "case_id": "generated-1474",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 1064
+      },
+      {
+        "case_id": "generated-1474",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 1064
+      },
+      {
+        "case_id": "generated-1474",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 1064
+      },
+      {
+        "case_id": "generated-1474",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 1072
+      },
+      {
+        "case_id": "generated-1474",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 1064
+      },
+      {
+        "case_id": "generated-1474",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 1072
+      },
+      {
+        "case_id": "generated-1474",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 1072
+      },
+      {
+        "case_id": "generated-1475",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-1475",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 1035
+      },
+      {
+        "case_id": "generated-1475",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-1475",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 4
+      },
+      {
+        "case_id": "generated-1475",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 1064
+      },
+      {
+        "case_id": "generated-1475",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 1064
+      },
+      {
+        "case_id": "generated-1475",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 1064
+      },
+      {
+        "case_id": "generated-1475",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 1064
+      },
+      {
+        "case_id": "generated-1475",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 1064
+      },
+      {
+        "case_id": "generated-1475",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 1104
+      },
+      {
+        "case_id": "generated-1475",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 1064
+      },
+      {
+        "case_id": "generated-1475",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 1104
+      },
+      {
+        "case_id": "generated-1475",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 1104
+      },
+      {
+        "case_id": "generated-1921",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 8
+      },
+      {
+        "case_id": "generated-1921",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 110
+      },
+      {
+        "case_id": "generated-1921",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-1921",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 8
+      },
+      {
+        "case_id": "generated-1921",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1921",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1921",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1921",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1921",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1921",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 152
+      },
+      {
+        "case_id": "generated-1921",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1921",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 152
+      },
+      {
+        "case_id": "generated-1921",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 152
+      },
+      {
+        "case_id": "generated-1922",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 8
+      },
+      {
+        "case_id": "generated-1922",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 78
+      },
+      {
+        "case_id": "generated-1922",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-1922",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 8
+      },
+      {
+        "case_id": "generated-1922",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 88
+      },
+      {
+        "case_id": "generated-1922",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 88
+      },
+      {
+        "case_id": "generated-1922",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 88
+      },
+      {
+        "case_id": "generated-1922",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 88
+      },
+      {
+        "case_id": "generated-1922",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 88
+      },
+      {
+        "case_id": "generated-1922",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 88
+      },
+      {
+        "case_id": "generated-1922",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 92
+      },
+      {
+        "case_id": "generated-1922",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 88
+      },
+      {
+        "case_id": "generated-1922",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 92
+      },
+      {
+        "case_id": "generated-1922",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 92
+      },
+      {
+        "case_id": "generated-1923",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 8
+      },
+      {
+        "case_id": "generated-1923",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 117
+      },
+      {
+        "case_id": "generated-1923",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-1923",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 8
+      },
+      {
+        "case_id": "generated-1923",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1923",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1923",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1923",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1923",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1923",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 152
+      },
+      {
+        "case_id": "generated-1923",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1923",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 152
+      },
+      {
+        "case_id": "generated-1923",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 152
+      },
+      {
+        "case_id": "generated-1924",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 8
+      },
+      {
+        "case_id": "generated-1924",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 110
+      },
+      {
+        "case_id": "generated-1924",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-1924",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 8
+      },
+      {
+        "case_id": "generated-1924",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1924",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1924",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1924",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1924",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1924",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1924",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 144
+      },
+      {
+        "case_id": "generated-1924",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1924",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 144
+      },
+      {
+        "case_id": "generated-1924",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 144
+      },
+      {
+        "case_id": "generated-1925",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 8
+      },
+      {
+        "case_id": "generated-1925",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 110
+      },
+      {
+        "case_id": "generated-1925",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-1925",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 8
+      },
+      {
+        "case_id": "generated-1925",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1925",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1925",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1925",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1925",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1925",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 152
+      },
+      {
+        "case_id": "generated-1925",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 136
+      },
+      {
+        "case_id": "generated-1925",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 152
+      },
+      {
+        "case_id": "generated-1925",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 152
+      },
+      {
+        "case_id": "generated-1950",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 8
+      },
+      {
+        "case_id": "generated-1950",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 1086
+      },
+      {
+        "case_id": "generated-1950",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-1950",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 8
+      },
+      {
+        "case_id": "generated-1950",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 1096
+      },
+      {
+        "case_id": "generated-1950",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 1096
+      },
+      {
+        "case_id": "generated-1950",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 1096
+      },
+      {
+        "case_id": "generated-1950",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 1096
+      },
+      {
+        "case_id": "generated-1950",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 1096
+      },
+      {
+        "case_id": "generated-1950",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 1100
+      },
+      {
+        "case_id": "generated-1950",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 1096
+      },
+      {
+        "case_id": "generated-1950",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 1100
+      },
+      {
+        "case_id": "generated-1950",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 1100
+      },
+      {
+        "case_id": "generated-1951",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 8
+      },
+      {
+        "case_id": "generated-1951",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 2118
+      },
+      {
+        "case_id": "generated-1951",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-1951",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 8
+      },
+      {
+        "case_id": "generated-1951",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1951",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1951",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1951",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1951",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1951",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 2168
+      },
+      {
+        "case_id": "generated-1951",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1951",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 2168
+      },
+      {
+        "case_id": "generated-1951",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 2168
+      },
+      {
+        "case_id": "generated-1952",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 8
+      },
+      {
+        "case_id": "generated-1952",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 2118
+      },
+      {
+        "case_id": "generated-1952",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-1952",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 8
+      },
+      {
+        "case_id": "generated-1952",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1952",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1952",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1952",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1952",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1952",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1952",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 2160
+      },
+      {
+        "case_id": "generated-1952",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1952",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 2160
+      },
+      {
+        "case_id": "generated-1952",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 2160
+      },
+      {
+        "case_id": "generated-1953",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 8
+      },
+      {
+        "case_id": "generated-1953",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 2118
+      },
+      {
+        "case_id": "generated-1953",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-1953",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 8
+      },
+      {
+        "case_id": "generated-1953",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1953",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1953",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1953",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1953",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1953",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 2168
+      },
+      {
+        "case_id": "generated-1953",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1953",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 2168
+      },
+      {
+        "case_id": "generated-1953",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 2168
+      },
+      {
+        "case_id": "generated-1954",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 8
+      },
+      {
+        "case_id": "generated-1954",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 1086
+      },
+      {
+        "case_id": "generated-1954",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-1954",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 8
+      },
+      {
+        "case_id": "generated-1954",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 1096
+      },
+      {
+        "case_id": "generated-1954",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 1096
+      },
+      {
+        "case_id": "generated-1954",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 1096
+      },
+      {
+        "case_id": "generated-1954",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 1096
+      },
+      {
+        "case_id": "generated-1954",
+        "mutation": "missing-Hall-cut",
+        "rejected": true,
+        "checker_steps": 1096
+      },
+      {
+        "case_id": "generated-1954",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 1100
+      },
+      {
+        "case_id": "generated-1954",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 1096
+      },
+      {
+        "case_id": "generated-1954",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 1100
+      },
+      {
+        "case_id": "generated-1954",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 1100
+      },
+      {
+        "case_id": "generated-1955",
+        "mutation": "count-plus-one",
+        "rejected": true,
+        "checker_steps": 8
+      },
+      {
+        "case_id": "generated-1955",
+        "mutation": "missing-node",
+        "rejected": true,
+        "checker_steps": 2118
+      },
+      {
+        "case_id": "generated-1955",
+        "mutation": "duplicate-node",
+        "rejected": true,
+        "checker_steps": 0
+      },
+      {
+        "case_id": "generated-1955",
+        "mutation": "predicate-confusion",
+        "rejected": true,
+        "checker_steps": 8
+      },
+      {
+        "case_id": "generated-1955",
+        "mutation": "capacity-plus-one",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1955",
+        "mutation": "wrong-representative",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1955",
+        "mutation": "class-order",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1955",
+        "mutation": "wrong-prefix",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1955",
+        "mutation": "duplicate-matched-class",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1955",
+        "mutation": "wrong-spectrum",
+        "rejected": true,
+        "checker_steps": 2172
+      },
+      {
+        "case_id": "generated-1955",
+        "mutation": "inconsistent-report",
+        "rejected": true,
+        "checker_steps": 2152
+      },
+      {
+        "case_id": "generated-1955",
+        "mutation": "wrong-verdict",
+        "rejected": true,
+        "checker_steps": 2172
+      },
+      {
+        "case_id": "generated-1955",
+        "mutation": "wrong-allocation",
+        "rejected": true,
+        "checker_steps": 2172
+      }
+    ],
+    "valid_control_nodes": 10171,
+    "valid_control_steps": 44514,
+    "rejected_checker_steps": 445505
+  },
+  "cpu_seconds": 2.536000347,
+  "wall_seconds": 2.536116204000109,
+  "peak_rss_kib": 94252,
+  "workers": 1
+}
