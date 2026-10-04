@@ -110,7 +110,6 @@ The generated inputs and authored fixtures validate the bounded theorem and impl
 
 ## Authorship and disclosure
 
-This is an internal research artifact, not a submitted or accepted paper. OpenAI GPT-5.6 Sol Pro provided substantive assistance with research formulation, ordinary proof drafts, implementation, generated inputs, experimental execution, documentation, manuscript text, and figures. Human authors must independently verify the scientific content, agree on authorship and order, and satisfy the applicable disclosure and submission policies before external use. No independent or blind external review occurred.
 
 ## License
 
