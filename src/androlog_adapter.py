@@ -159,11 +159,15 @@ def _parse_session_file_with_size(
     path: Path, log_identifier: str, probe_map: Mapping[str, int], *,
     max_bytes: int = MAX_SESSION_BYTES,
 ) -> tuple[tuple[int, ...], int]:
-    descriptor, size = _open_regular_binary(path, max_bytes=max_bytes, label="session file")
+    descriptor, _ = _open_regular_binary(path, max_bytes=max_bytes, label="session file")
     try:
-        with io.TextIOWrapper(os.fdopen(descriptor, "rb", closefd=True), encoding="utf-8", errors="strict") as handle:
+        with os.fdopen(descriptor, "rb", closefd=True) as handle:
             descriptor = -1
-            return parse_session(handle, log_identifier, probe_map), size
+            payload = handle.read(max_bytes + 1)
+        if len(payload) > max_bytes:
+            raise InvalidLog(f"session file exceeds {max_bytes} bytes")
+        lines = io.StringIO(payload.decode("utf-8", errors="strict"), newline=None)
+        return parse_session(lines, log_identifier, probe_map), len(payload)
     except (OSError, UnicodeError) as exc:
         raise InvalidLog(f"cannot read session file as strict UTF-8: {exc}") from exc
     finally:
@@ -278,9 +282,12 @@ def adapt_directory(
 def _load_json_object(path: Path, label: str) -> dict:
     descriptor, _ = _open_regular_binary(path, max_bytes=MAX_CONFIG_BYTES, label=label)
     try:
-        with io.TextIOWrapper(os.fdopen(descriptor, "rb", closefd=True), encoding="utf-8", errors="strict") as handle:
+        with os.fdopen(descriptor, "rb", closefd=True) as handle:
             descriptor = -1
-            value = json.load(handle)
+            payload = handle.read(MAX_CONFIG_BYTES + 1)
+        if len(payload) > MAX_CONFIG_BYTES:
+            raise InvalidLog(f"{label} exceeds {MAX_CONFIG_BYTES} bytes")
+        value = json.loads(payload.decode("utf-8", errors="strict"))
     except (OSError, UnicodeError, json.JSONDecodeError) as exc:
         raise InvalidLog(f"cannot read {label}: {exc}") from exc
     finally:
