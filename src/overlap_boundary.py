@@ -93,17 +93,28 @@ def x3c_to_overlapping_report(
 
 
 def compatible_selections(views: Sequence[Sequence[int]], counts: Sequence[int], token_count: int) -> list[tuple[int, ...]]:
-    """Brute-force exact-count view oracle, independent of X3C logic."""
-    if token_count < 0 or len(views) != len(counts):
+    """Brute-force exact-count view oracle, independent of X3C logic.
+
+    Nonnegative integer counts above a view's capacity describe a well-formed
+    but infeasible report, including the empty views of valid X3C instances.
+    Malformed shapes, indices, and counts are still rejected.
+    """
+    if type(token_count) is not int or token_count < 0 or len(views) != len(counts):
         raise ValueError("shape")
     canonical_views: list[tuple[int, ...]] = []
+    locally_impossible = False
     for view, count in zip(views, counts):
         v = tuple(view)
         if len(set(v)) != len(v) or any(type(i) is not int or not 0 <= i < token_count for i in v):
             raise ValueError("view")
-        if type(count) is not int or not 0 <= count <= len(v):
+        if type(count) is not int or count < 0:
             raise ValueError("count")
+        locally_impossible |= count > len(v)
         canonical_views.append(v)
+    # Validate every row before returning, so infeasibility never hides a later
+    # malformed row. No subset enumeration is needed for a local obstruction.
+    if locally_impossible:
+        return []
     out: list[tuple[int, ...]] = []
     for bits in product((0, 1), repeat=token_count):
         if all(sum(bits[i] for i in view) == count
