@@ -37,10 +37,12 @@ A successful run reports 2,448 equal deterministic rows, an equal deterministic 
 The separate platform-independent regressions run with:
 
 ```sh
-python -m unittest -v tests.test_overlap_totality tests.test_adapter_read_limits
+python -m unittest -v tests.test_overlap_totality tests.test_adapter_read_limits tests.test_matching_index
 ```
 
 The totality regression additionally checks the 2,106 uncovered-element X3C families excluded from the frozen overlap campaign. It does not change that campaign's 4,090-family denominator or its retained result file. Well-formed infeasible exact-count views return no compatible selections; malformed shapes, indices, and counts still raise `ValueError`.
+
+The matching-index suite adds seven self-contained test methods to the existing fourteen portable methods. Its independent test-local references enumerate integer cell allocations and bucket assignments rather than copying a historical matching routine. It checks the complete 1,188-matrix ternary domain (28,836 reports and 45,944 outcome allocations), 34 authored tiny sources against direct whole-word evaluation, order/rerouting, invocation-local caching, report binding, and allocation failures. These are current finite regressions, separate from the eight retained validation groups and their archived result objects; a successful unit run does not reproduce the complete campaign or its resource measurements.
 
 `.github/workflows/scientific-checks.yml` runs these regressions and the full fresh-output reproduction on `ubuntu-latest` with Python 3.12 when this standalone artifact is the repository root. It keeps outputs under a newly created `$RUNNER_TEMP` directory, verifies frozen `data/` and `results/` are unchanged, and uploads the outputs, logs, exit codes, runner metadata, and GNU `time` measurements for 14 days. The job has a 15-minute hard limit, a 60-second regression timeout, a 600-second reproduction timeout, a 3 GiB per-process address-space limit, and a 600-second per-process CPU limit. The existing 45-second subprocess and 20-second per-case limits remain; the CPU limit is not an aggregate CPU quota. These are enforced ceilings, not predicted runtimes. The scientific workload uses one worker and only bounded local models and authored benign AndroLog fixtures; no secrets, model API, APK, exploitation, or network target is required. Checkout, Python setup, and artifact upload use GitHub infrastructure. The Linux resource-limited CLI is not a Windows test.
 
@@ -56,6 +58,8 @@ python -m tests.validate --part overlap   --output /tmp/tlc-overlap
 python -m tests.validate --part stress    --output /tmp/tlc-stress
 python -m tests.validate --part androlog  --output /tmp/tlc-androlog
 ```
+
+Within each `matching_prefix` call, a lazy class-to-bucket support index avoids rereading a class's support cells during repeated augmentation and Hall-cut traversal. Bucket order remains ascending, and each explanatory allocation still performs its own prefix search. The index is discarded after the call, stores at most one bucket list per visited class, and changes no certificate field, checker counter, source admission cap, circulation baseline, or oracle. This is a bounded implementation change, not a new theorem or measured speedup. The admitted input is still a rectangular nonnegative integer capacity matrix; this producer helper is not a general malformed-input validator.
 
 To certify one admitted model and count vector, use the Python API in `src/producer.py` and validate with `src/checker.py`. The checker API takes three separate inputs:
 

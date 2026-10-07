@@ -53,7 +53,7 @@ jobs:
           PY
           find data results -type f -print0 | sort -z | xargs -0 sha256sum > "$root/frozen-inputs-results.sha256"
 
-      - name: Run separate totality and consumed-byte regressions
+      - name: Run separate totality, consumed-byte and matching-index regressions
         timeout-minutes: 2
         run: |
           set -euo pipefail
@@ -62,7 +62,7 @@ jobs:
           set +e
           /usr/bin/time -v -o "$P007_RESULT_DIR/unit-tests.time.txt" \
             timeout --signal=TERM --kill-after=10s 60s \
-            python -m unittest -v tests.test_overlap_totality tests.test_adapter_read_limits \
+            python -m unittest -v tests.test_overlap_totality tests.test_adapter_read_limits tests.test_matching_index \
             2>&1 | tee "$P007_RESULT_DIR/unit-tests.log"
           status=$?
           set -e

@@ -94,9 +94,15 @@ def matching_prefix(N: list[list[int]], n: list[int], limit: int | None=None) ->
     """Incremental capacitated matching, stopping at the first infeasible prefix."""
     k=len(N[0]); b=len(N); limit=k if limit is None else limit
     assigned=[[] for _ in range(b)]
+    support={}
+    def neighbors(c: int) -> tuple[int, ...]:
+        # Invocation-local index: preserve ascending bucket traversal exactly.
+        if c not in support:
+            support[c]=tuple(y for y in range(b) if N[y][c])
+        return support[c]
     def augment(c: int, seen: set[int]) -> bool:
-        for y in range(b):
-            if not N[y][c] or y in seen: continue
+        for y in neighbors(c):
+            if y in seen: continue
             seen.add(y)
             if len(assigned[y]) < n[y]:
                 assigned[y].append(c); return True
@@ -113,8 +119,8 @@ def matching_prefix(N: list[list[int]], n: list[int], limit: int | None=None) ->
         left={p}; right=set(); queue=deque([p])
         while queue:
             c=queue.popleft()
-            for y in range(b):
-                if N[y][c] and y not in right:
+            for y in neighbors(c):
+                if y not in right:
                     right.add(y)
                     for old in assigned[y]:
                         if old not in left: left.add(old); queue.append(old)
