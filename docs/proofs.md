@@ -146,3 +146,38 @@ This theorem separates two contracts.  Under the partition contract, row choices
 ### Executable reduction check
 
 `src/overlap_boundary.py` implements the X3C map and two independent tiny oracles: direct exact-cover enumeration and brute-force 0--1 view feasibility.  `tests/validate.py --part overlap` checks every subfamily of at most four of the twenty three-sets on a six-element universe for which every element occurs in at least one chosen set.  The finite check covers 4,090 locally admissible families (1,675 feasible and 2,415 infeasible) with no disagreement.  This exhaustive bounded check validates the implementation of the reduction on the named domain; it is not the proof of NP-completeness, which is the reduction above.
+
+## 9. Summary-only diagnostic routing and cardinality relaxation
+
+Fix the ordered classes, exact capacities N, and valid distinct-trace report n.
+An auditor has a catalogue Q of class-indexed benign diagnostics. No selected
+allocation is disclosed. Set J=Omega(N,n) minus {k}. The requested output is the
+exact first-omission branch list J, the unsupported branches J minus Q, whether
+J is a subset of Q, the complete-possible bit, and min(J intersect Q) when it
+exists. These are routing decisions, not assertions about the actual omission.
+
+J is the unique minimal list covering the first omission of every compatible
+incomplete selection. For necessity, any c in J has a compatible selection with
+first omission c, so omitting c leaves that branch uncovered. For sufficiency,
+every incomplete compatible selection has an outcome in J by definition.
+Consequently Q covers all first-omission branches iff J is a subset of Q.
+This is a consequence of possible-outcome semantics, not a separate novelty
+claim. The list does not cover all later omissions: after diagnosing one branch,
+the evidence must be updated under a justified contract before deciding again.
+Class-indexed diagnostic feasibility or reliable execution is not proved here.
+
+Let q=min(k,sum_y n_y). Replacing matching by the necessary selected-slot bound
+gives Omega_count={c<k: c<=q and a_c} union ({k} if q=k). Then Omega is a subset
+of Omega_count: c earlier classes require c distinct selected traces, and full
+coverage requires k; exact exclusion is still necessary. Thus the relaxation
+can add impossible branches or COMPLETE, but cannot remove an exact outcome.
+For catalogue sufficiency, its larger finite branch list can only conservatively
+reject a catalogue, never incorrectly certify a catalogue as sufficient.
+
+`src/summary_audit.py` implements that relaxation and a per-candidate ordinary
+maximum-flow matching reference. Each reference candidate reserves all earlier
+classes in positive-capacity cells with bucket capacities n_y, then checks
+outside-c row capacity. Lemma 3 proves equivalence to exact first-omission
+feasibility, including candidate k. This reference shares the mathematical lemma
+but not producer code; `src/baseline.py` instead solves lower-bound circulation.
+The comparison is not an implementation proof or a speedup measurement.

@@ -17,6 +17,13 @@ The command derives distinct source words, bucket counts, and a class allocation
 
 Acceptance does **not** authenticate the files, prove that instrumentation executed, establish a faithful APK-to-model abstraction, or infer that a probe has the supplied event meaning. The adapter validates model syntax and probe-map normalization, declared-event range, integer typing, and injectivity, but the map’s semantic meaning and acquisition provenance remain trusted. Unknown or malformed identifier-bearing probes cause rejection rather than being silently ignored. Configuration files are regular non-symlink strict-UTF-8 JSON objects capped at 4 MiB.
 
+The published AndroLog instrumenter also uses `LogCheckerClass` to suppress an
+already logged probe. Default instrumented output is therefore not established
+to preserve the complete repeated-event history that count and temporal monitors
+may require. The adapter preserves the sequence it receives; it cannot restore
+suppressed occurrences. The synthetic fixture tests this repository's declared
+session contract, not fidelity of actual default AndroLog execution histories.
+
 ## Fixture
 
 `data/androlog-format-fixture/` is authored synthetic text. It exercises all seven label kinds, statement-pipe normalization, assignment anchoring after the identifier, session order, normalized-trace deduplication across byte-distinct files, certificate construction, 22 portable fail-closed negative controls, a parameterized exact/over-one aggregate boundary, two POSIX no-writer FIFO subprocess controls when supported, and report binding. The aggregate fixture contains valid text traces and reaches no other rejection branch; the FIFO controls pass only on explicit `InvalidLog`, not timeout. No APK, Android device, emulator, private dataset, or upstream executable is included.

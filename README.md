@@ -37,14 +37,41 @@ A successful run reports 2,448 equal deterministic rows, an equal deterministic 
 The separate platform-independent regressions run with:
 
 ```sh
-python -m unittest -v tests.test_overlap_totality tests.test_adapter_read_limits tests.test_matching_index
+python -m unittest -v tests.test_overlap_totality tests.test_adapter_read_limits tests.test_matching_index tests.test_summary_audit
 ```
 
 The totality regression additionally checks the 2,106 uncovered-element X3C families excluded from the frozen overlap campaign. It does not change that campaign's 4,090-family denominator or its retained result file. Well-formed infeasible exact-count views return no compatible selections; malformed shapes, indices, and counts still raise `ValueError`.
 
-The matching-index suite adds seven self-contained test methods to the existing fourteen portable methods. Its independent test-local references enumerate integer cell allocations and bucket assignments rather than copying a historical matching routine. It checks the complete 1,188-matrix ternary domain (28,836 reports and 45,944 outcome allocations), 34 authored tiny sources against direct whole-word evaluation, order/rerouting, invocation-local caching, report binding, and allocation failures. These are current finite regressions, separate from the eight retained validation groups and their archived result objects; a successful unit run does not reproduce the complete campaign or its resource measurements.
+The matching-index suite adds seven self-contained test methods to the existing fourteen portable methods. Its independent test-local references enumerate integer cell allocations and bucket assignments rather than copying a historical matching routine. It checks the complete 1,188-matrix ternary domain (28,836 reports and 45,944 outcome allocations), 34 authored tiny sources against direct whole-word evaluation, order/rerouting, invocation-local caching, report binding, and allocation failures. The four summary-audit methods add 64 nonempty-column 2-by-2 ternary matrices and 658 reports checked against labelled subsets and all four diagnostic catalogues, plus Hall, spectrum-gap, status-only, and malformed-input controls. These are current finite regressions, separate from the eight retained validation groups and their archived result objects; a successful unit run does not reproduce the complete campaign or its resource measurements.
 
-`.github/workflows/scientific-checks.yml` runs these regressions and the full fresh-output reproduction on `ubuntu-latest` with Python 3.12 when this standalone artifact is the repository root. It keeps outputs under a newly created `$RUNNER_TEMP` directory, verifies frozen `data/` and `results/` are unchanged, and uploads the outputs, logs, exit codes, runner metadata, and GNU `time` measurements for 14 days. The job has a 15-minute hard limit, a 60-second regression timeout, a 600-second reproduction timeout, a 3 GiB per-process address-space limit, and a 600-second per-process CPU limit. The existing 45-second subprocess and 20-second per-case limits remain; the CPU limit is not an aggregate CPU quota. These are enforced ceilings, not predicted runtimes. The scientific workload uses one worker and only bounded local models and authored benign AndroLog fixtures; no secrets, model API, APK, exploitation, or network target is required. Checkout, Python setup, and artifact upload use GitHub infrastructure. The Linux resource-limited CLI is not a Windows test.
+## Summary-only audit routing
+
+Given checked ordered capacities N and exact bucket counts n, `src/summary_audit.py`
+routes every possible first-omission class to an owned diagnostic catalogue Q. It
+returns the exact branch list, unsupported branches, whether Q covers every such
+branch, whether complete coverage is possible, and the least available candidate.
+This is neither an observed omission nor a guarantee that executing one or all
+listed diagnostics completes coverage; later omissions and diagnostic feasibility
+require further evidence.
+
+```sh
+python -m tests.compare_summary_audit --output /tmp/summary-audit.json
+```
+
+This portable command rechecks the retained packet and compares the same N,n
+with a cardinality-plus-exclusion relaxation, an ordinary per-candidate matching
+reference, and the existing circulation solver. No hidden allocation is used for
+routing. The separate retained output `results/summary_audit.json` records all
+2,448 primary rows and four controls outside that denominator. Both exact
+references agree. The relaxation adds 42 finite branches across 28 cases, but
+adds zero COMPLETE outcomes, preserving the primary binary null. Four fixed
+catalogue policies give 9,792 queries: only two catalogue-sufficiency decisions
+change, both conservatively, and zero next-candidate choices change. Full routing
+objects differ on 112 queries because they include the branch list; this is not
+a count of changed binary decisions. No runtime or deployed-diagnostic benefit
+is claimed. See `docs/validation.md` for controls and domain details.
+
+`.github/workflows/scientific-checks.yml` runs these regressions, the separate summary-only comparison, and the full fresh-output reproduction on `ubuntu-latest` with Python 3.12 when this standalone artifact is the repository root. It keeps outputs under a newly created `$RUNNER_TEMP` directory, verifies frozen `data/` and `results/` are unchanged, and uploads the outputs, logs, exit codes, runner metadata, and GNU `time` measurements for 14 days. The job has a 15-minute hard limit, 60-second timeouts for regressions and the summary-only comparison, a 600-second reproduction timeout, a 3 GiB per-process address-space limit, and a 600-second per-process CPU limit. The existing 45-second subprocess and 20-second per-case limits remain; the CPU limit is not an aggregate CPU quota. These are enforced ceilings, not predicted runtimes. The scientific workload uses one worker and only bounded local models and authored benign AndroLog fixtures; no secrets, model API, APK, exploitation, or network target is required. Checkout, Python setup, and artifact upload use GitHub infrastructure. The Linux resource-limited CLI is not a Windows test.
 
 ## Focused commands
 
@@ -92,6 +119,7 @@ The bridge accepts only strict UTF-8 regular non-symlink files, caps each sessio
 - `src/checker.py` - independently written semantic and certificate replay
 - `src/verify.py` - batch replay against frozen expected reports
 - `src/baseline.py` - independently coded circulation comparator
+- `src/summary_audit.py` - summary-only routing and same-information references
 - `src/oracle.py` - direct whole-word and labelled-token finite oracles
 - `src/overlap_boundary.py` - X3C reduction and tiny overlap-consistency oracle
 - `src/androlog_adapter.py` - public-label syntax bridge
@@ -101,6 +129,7 @@ The bridge accepts only strict UTF-8 regular non-symlink files, caps each sessio
 - `results/campaign/` - primary per-case rows, chunks, certificates, and summary
 - `results/tests/` - exact finite-domain results
 - `results/replay.json` - standalone checker replay record
+- `results/summary_audit.json` - separate primary routing comparison and owned controls
 - `results/clean_reproduction.json` - retained clean-extraction comparison
 - `docs/proofs.md` - complete ordinary mathematical arguments
 - `docs/input-contract.md` - admitted source/report language and exclusions

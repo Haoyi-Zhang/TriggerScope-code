@@ -24,7 +24,49 @@ Bucket-label coverage asserts complete when every bucket has a positive report c
 
 `not_entailed` counts proxy assertions not forced by the evidence. `false_for_constructed_report` counts assertions contradicted by the particular authored allocation. These are distinct: a statement can happen to be true of the authored allocation yet not follow from its disclosed counts. Exact class-allocation disclosure always fixes the outcome, by the allocation lemma; the replay command checks that allocation as evidence, not as a competing detector.
 
-The no-Hall ablation permits every individually avoidable class and always permits COMPLETE. The no-exclusion ablation permits every candidate allowed by prefix length. The complete primary suite has no difference between the count-threshold proxy and existential full-cover feasibility; the isolated Hall control supplies that distinction. Do not read the no-Hall ablation's disagreements as showing Hall-specific discrimination across the primary distribution.
+The no-Hall ablation permits every individually avoidable class and always permits COMPLETE. The no-exclusion ablation permits every candidate allowed by prefix length. The complete primary suite has no difference between the count-threshold proxy and existential full-cover feasibility; the isolated Hall control supplies that binary distinction. The no-Hall disagreement count is not a comparison with cardinality; the separate summary-only comparison below retains both cardinality and exclusion.
+
+## Summary-only audit-routing comparison
+
+`tests.compare_summary_audit` reads the retained packet, rechecks every source
+certificate against separately frozen counts, and supplies only ordered N,n to
+the cardinality relaxation, ordinary per-candidate matching, and circulation
+references. It does not regenerate the primary models or expose the stored
+actual allocation to routing. Results are separate in `results/summary_audit.json`;
+the original campaign, eight validation groups, and resource measurements remain
+unchanged. This comparison is portable and does not import Unix `resource`.
+
+The task returns the exact possible-first-omission branch list, unsupported
+catalogue branches, catalogue sufficiency, and the least available candidate.
+Catalogue policies are fixed as empty, all classes, even indices, and the first
+floor(k/2) classes. They are schematic audit policies, not measured diagnostic
+capabilities. The supplied source representatives name benign candidate traces;
+the comparison does not execute those diagnostics or demonstrate coverage closure.
+
+All 2,448 checked spectra agree with both exact references. The cardinality
+relaxation retains exact exclusion but replaces the prefix frontier by total
+reported slots. It differs on 28 cases, adding 42 finite branches and zero
+COMPLETE outcomes. Both binary complete-feasibility answers therefore remain
+identical on the primary suite. The four policies produce 9,792 catalogue queries:
+two sufficiency decisions are conservatively rejected by the relaxation (both
+on `generated-0224`), while the least available candidate changes zero times.
+The full routing output, which includes the branch list, differs on 112 queries;
+this is not 112 changed yes/no decisions. No timing benefit is measured.
+
+Four controls remain outside the primary denominator: the two retained controls
+plus a source-grounded partial Hall prefix and a noncontiguous spectrum. The former
+has N=[[1,1,0,0],[0,0,1,1]], n=[1,1], exact outcomes [0,1], and relaxed outcomes
+[0,1,2]. A catalogue [0,1] suffices only under the exact result. The latter has
+N=[[1,0,1],[0,1,0],[0,0,1]], n=[1,1,1], outcomes [0,3]; class 1 or 2 must not be
+inserted by taking an interval between extremes. Both use one-event owned models
+checked against direct whole words and labelled-token subsets. No Android/APK
+input or population interpretation is attached.
+
+The four portable `tests.test_summary_audit` methods additionally exhaust 64
+nonempty-column 2-by-2 ternary matrices, 658 reports, and all four catalogues per
+report against labelled subsets; test Hall, noncontiguous, and status-only controls;
+and distinguish malformed input from valid reports. These are a new regression
+domain, not an addition to the retained 1,188-matrix experiment denominator.
 
 ## Resource counters
 

@@ -42,6 +42,7 @@ jobs:
               "address_space_limit_bytes_per_process": 3 * 1024 ** 3,
               "cpu_limit_seconds_per_process": 600,
               "unit_test_wall_timeout_seconds": 60,
+              "summary_audit_wall_timeout_seconds": 60,
               "reproduction_wall_timeout_seconds": 600,
               "subprocess_wall_timeout_seconds": 45,
               "case_wall_timeout_seconds": 20,
@@ -53,7 +54,7 @@ jobs:
           PY
           find data results -type f -print0 | sort -z | xargs -0 sha256sum > "$root/frozen-inputs-results.sha256"
 
-      - name: Run separate totality, consumed-byte and matching-index regressions
+      - name: Run separate totality, consumed-byte, matching-index and audit regressions
         timeout-minutes: 2
         run: |
           set -euo pipefail
@@ -62,11 +63,27 @@ jobs:
           set +e
           /usr/bin/time -v -o "$P007_RESULT_DIR/unit-tests.time.txt" \
             timeout --signal=TERM --kill-after=10s 60s \
-            python -m unittest -v tests.test_overlap_totality tests.test_adapter_read_limits tests.test_matching_index \
+            python -m unittest -v tests.test_overlap_totality tests.test_adapter_read_limits tests.test_matching_index tests.test_summary_audit \
             2>&1 | tee "$P007_RESULT_DIR/unit-tests.log"
           status=$?
           set -e
           printf '%s\n' "$status" > "$P007_RESULT_DIR/unit-tests-exit-code.txt"
+          exit "$status"
+
+      - name: Compare the summary-only audit task on retained inputs
+        timeout-minutes: 2
+        run: |
+          set -euo pipefail
+          ulimit -v 3145728
+          ulimit -t 600
+          set +e
+          /usr/bin/time -v -o "$P007_RESULT_DIR/summary-audit.time.txt" \
+            timeout --signal=TERM --kill-after=10s 60s \
+            python -m tests.compare_summary_audit --output "$P007_RESULT_DIR/summary-audit.json" \
+            2>&1 | tee "$P007_RESULT_DIR/summary-audit.log"
+          status=$?
+          set -e
+          printf '%s\n' "$status" > "$P007_RESULT_DIR/summary-audit-exit-code.txt"
           exit "$status"
 
       - name: Reproduce the complete frozen scientific campaign
