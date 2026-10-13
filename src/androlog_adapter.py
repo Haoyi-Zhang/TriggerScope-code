@@ -207,11 +207,24 @@ def adapt_sessions(
         raise InvalidLog(f"model enumeration rejected: {exc}") from exc
     class_index = {tuple(value): i for i, value in enumerate(dag["classes"])}
     bucket_index = {tuple(value): i for i, value in enumerate(dag["buckets"])}
-    canonical = [tuple(trace) for trace in sessions]
+    if type(sessions) not in (list, tuple):
+        raise InvalidLog("normalized sessions must be a list or tuple")
+    canonical = []
+    semantics = {}
+    for session in sessions:
+        if type(session) not in (list, tuple):
+            raise InvalidLog("normalized session must be a list or tuple")
+        trace = tuple(session)
+        # Validate every supplied occurrence before hashing or deduplicating.
+        # Otherwise a valid (0,) can hide (False,) or (0.0,) because Python
+        # gives those tuples equal identity in a set, with order-dependent admission.
+        semantic, bucket = _evaluate_trace(model, trace)
+        canonical.append(trace)
+        semantics[trace] = (semantic, bucket)
     distinct = sorted(set(canonical), key=lambda word: (len(word), word))
     allocation = [[0 for _ in dag["classes"]] for _ in dag["buckets"]]
     for trace in distinct:
-        semantic, bucket = _evaluate_trace(model, trace)
+        semantic, bucket = semantics[trace]
         if semantic not in class_index or bucket not in bucket_index:
             raise InvalidLog("session is not represented by source enumeration")
         y = bucket_index[bucket]

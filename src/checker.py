@@ -16,6 +16,20 @@ def require(condition: bool, message: str) -> None:
 def integer(x: Any, lo: int, hi: int) -> bool:
     return type(x) is int and lo <= x <= hi
 
+def exact_json_equal(actual: Any, expected: Any) -> bool:
+    """Preserve JSON scalar types when comparing reconstructed records.
+
+    Python considers False, 0 and 0.0 equal; the admitted integer encoding does
+    not. Lists retain order and objects retain their complete key inventory.
+    """
+    if type(actual) is not type(expected):
+        return False
+    if type(expected) is list:
+        return len(actual)==len(expected) and all(exact_json_equal(a,e) for a,e in zip(actual,expected))
+    if type(expected) is dict:
+        return actual.keys()==expected.keys() and all(exact_json_equal(actual[k],v) for k,v in expected.items())
+    return actual==expected
+
 def validate_model(m: dict) -> None:
     require(type(m) is dict, "model must be an object")
     require(set(m)=={"events","monitors","triggers","horizon","min_length","environment_locked","report_modulus"},"model keys")
@@ -65,6 +79,7 @@ def check(model: dict, count_report: list[int], certificate: dict, *, meter: dic
     require(type(s) is dict and set(s)=={"layers","classes","representatives","buckets","capacity"},"semantic certificate keys")
     layers=s["layers"]; H=model["horizon"]; M=model["monitors"]
     require(type(layers) is list and len(layers)==H+1,"layer count")
+    require(all(type(L) is list for L in layers),"layer container type")
     require(sum(len(L) for L in layers)<=8192,"DAG size")
     maps=[]; seen=set(); steps=0
     for depth,L in enumerate(layers):
@@ -133,9 +148,9 @@ def check(model: dict, count_report: list[int], certificate: dict, *, meter: dic
     classes=sorted(reps,key=lambda c:(len(reps[c]),reps[c])); buckets=sorted(table)
     N=[[table[y][c] for c in classes] for y in buckets]
     require(1<=len(classes)<=2048,"class count")
-    require(s["classes"]==[list(c) for c in classes],"class identity/order")
-    require(s["representatives"]==[list(reps[c]) for c in classes],"canonical class representative")
-    require(s["buckets"]==[list(y) for y in buckets] and s["capacity"]==N,"semantic capacity table")
+    require(exact_json_equal(s["classes"],[list(c) for c in classes]),"class identity/order")
+    require(exact_json_equal(s["representatives"],[list(reps[c]) for c in classes]),"canonical class representative")
+    require(exact_json_equal(s["buckets"],[list(y) for y in buckets]) and exact_json_equal(s["capacity"],N),"semantic capacity table")
     require(all(v.bit_length()<=256 for row in N for v in row),"capacity width")
     n=certificate["count_report"]; k=len(classes); b=len(N)
     require(type(n) is list and len(n)==b and all(type(v) is int and 0<=v<=sum(N[y]) for y,v in enumerate(n)),"inconsistent count report")
@@ -167,7 +182,7 @@ def check(model: dict, count_report: list[int], certificate: dict, *, meter: dic
         if c<=p and all(n[y]<=totals[y]-N[y][c] for y in range(b)):
             expected.append(c)
     if p==k: expected.append(k)
-    require(expected and certificate["spectrum"]==expected,"omission spectrum")
+    require(expected and exact_json_equal(certificate["spectrum"],expected),"omission spectrum")
     verdict="forced-complete" if expected==[k] else "ambiguous" if k in expected else "forced-incomplete"
     require(certificate["verdict"]==verdict,"verdict")
     witnesses=certificate["witnesses"]

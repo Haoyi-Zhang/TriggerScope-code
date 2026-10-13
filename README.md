@@ -37,7 +37,7 @@ A successful run reports 2,448 equal deterministic rows, an equal deterministic 
 The separate platform-independent regressions run with:
 
 ```sh
-python -m unittest -v tests.test_overlap_totality tests.test_adapter_read_limits tests.test_matching_index tests.test_summary_audit
+python -B -m unittest -v tests.test_overlap_totality tests.test_adapter_read_limits tests.test_matching_index tests.test_summary_audit tests.test_strict_admission
 ```
 
 The totality regression additionally checks the 2,106 uncovered-element X3C families excluded from the frozen overlap campaign. It does not change that campaign's 4,090-family denominator or its retained result file. Well-formed infeasible exact-count views return no compatible selections; malformed shapes, indices, and counts still raise `ValueError`.
@@ -98,6 +98,47 @@ A certificate that is valid for another count vector is rejected against `expect
 
 ## AndroLog-format bridge
 
+### Exact certificate and session admission
+
+The checker compares reconstructed class vectors, representative indices,
+bucket indices, capacities and omission-spectrum indices with exact JSON
+scalar types. Python's equality of `False`, `0` and `0.0` is not the admitted
+integer encoding. Layer containers are validated before size arithmetic.
+The normalized-session API accepts lists or tuples and validates every trace
+before hashing or deduplicating it, so a valid `(0,)` cannot hide `(False,)`
+or `(0.0,)` through Python set equality. Only identical valid complete event
+traces are deduplicated; repeated events inside a trace remain distinct positions.
+
+`tests/test_strict_admission.py` adds six portable methods. It exercises 26
+decoded-JSON numeric substitutions, eight equal-valued session aliases in both
+orders, five malformed layer containers, valid duplicate traces, repeated
+events, count thresholds and strict precedence. The retained pre-repair
+observation accepted all 26 substitutions and four aliases; four layer inputs
+raised an unexpected Python exception. The repaired checker/adapter rejects
+every malformed case with its declared exception. These are admission-policy
+repairs, not different mathematical spectra for valid inputs.
+
+```sh
+python -B -m tests.test_strict_admission --output replay-admission.json --require-rejection
+```
+
+`results/admission/before.json` and `after.json` contain every observed case,
+its values/types, the owned model, the valid certificate and valid duplicate
+control. `results/admission/adapter.json` is the actually rerun authored-format
+conversion, bound to the existing `data/androlog-format-fixture/` model, probe
+map, sessions and `MY_SUPER_LOG` identifier. `valid-inputs.json` records the
+valid-input comparison against `results/summary_audit.json`: all 2,448 retained
+certificates and 9,792 same-information catalogue queries were replayed;
+the full routing result and adapter result are unchanged. The primary
+cardinality null, two catalogue-sufficiency differences and zero next-candidate
+differences remain. No hidden allocation is supplied to routing.
+
+All 31 portable tests pass in normal and optimized mode on Windows/Python
+3.12.14. These executions have no POSIX address-space/CPU limit, do not rerun
+the complete historical campaign, and leave its result files and timings intact.
+The admission records do not add device observations, native Android execution
+or a demonstrated diagnostic scheduling gain.
+
 `src/androlog_adapter.py` recognizes the public raw-probe labels `STATEMENT`, `METHOD`, `CLASS`, `ACTIVITY`, `SERVICE`, `BROADCASTRECEIVER`, and `CONTENTPROVIDER`. It requires an explicit injective probe map into one declared finite model, preserves probe order and repetition within a session, and deduplicates only identical complete normalized event traces before distinct-trace counting.
 
 Run the authored benign fixture with:
@@ -150,9 +191,6 @@ The count-threshold proxy and existential full-cover feasibility coincide on eve
 Counts denote distinct selected traces in a partition. Exact source capacities, fixed class order, independent selections, and truthful counts are assumptions. Repeated executions, lower bounds, arbitrary overlapping views, cross-trace constraints, changed horizons or predicates, spurious/omitted concrete behavior, and unauthenticated logs require different evidence and often a different theorem.
 
 The generated inputs and authored fixtures validate the bounded theorem and implementations. They are not 2,448 independent Android applications, not TriggerZoo samples, and not estimates of malware prevalence or detector accuracy. The public-label bridge is format interoperability, not a verified APK-to-model extraction.
-
-## Authorship and disclosure
-
 
 ## License
 

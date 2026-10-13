@@ -54,7 +54,7 @@ jobs:
           PY
           find data results -type f -print0 | sort -z | xargs -0 sha256sum > "$root/frozen-inputs-results.sha256"
 
-      - name: Run separate totality, consumed-byte, matching-index and audit regressions
+      - name: Run portable regressions and exact typed admission
         timeout-minutes: 2
         run: |
           set -euo pipefail
@@ -63,12 +63,25 @@ jobs:
           set +e
           /usr/bin/time -v -o "$P007_RESULT_DIR/unit-tests.time.txt" \
             timeout --signal=TERM --kill-after=10s 60s \
-            python -m unittest -v tests.test_overlap_totality tests.test_adapter_read_limits tests.test_matching_index tests.test_summary_audit \
+            python -m unittest -v tests.test_overlap_totality tests.test_adapter_read_limits tests.test_matching_index tests.test_summary_audit tests.test_strict_admission \
             2>&1 | tee "$P007_RESULT_DIR/unit-tests.log"
           status=$?
           set -e
           printf '%s\n' "$status" > "$P007_RESULT_DIR/unit-tests-exit-code.txt"
           exit "$status"
+
+      - name: Repeat portable regressions with assertions disabled
+        timeout-minutes: 2
+        run: |
+          set -euo pipefail
+          ulimit -v 3145728
+          ulimit -t 600
+          timeout --signal=TERM --kill-after=10s 60s \
+            python -O -m unittest -v tests.test_overlap_totality tests.test_adapter_read_limits tests.test_matching_index tests.test_summary_audit tests.test_strict_admission \
+            2>&1 | tee "$P007_RESULT_DIR/optimized-tests.log"
+          python -B -m tests.test_strict_admission \
+            --output "$P007_RESULT_DIR/admission.json" --require-rejection \
+            2>&1 | tee "$P007_RESULT_DIR/admission.log"
 
       - name: Compare the summary-only audit task on retained inputs
         timeout-minutes: 2

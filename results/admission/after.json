@@ -1,0 +1,755 @@
+{
+  "certificate_substitutions": [
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 0,
+      "path": [
+        "semantics",
+        "classes",
+        0,
+        0
+      ],
+      "reason": "class identity/order",
+      "replacement": 0.0,
+      "replacement_type": "float"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 0,
+      "path": [
+        "semantics",
+        "classes",
+        0,
+        0
+      ],
+      "reason": "class identity/order",
+      "replacement": false,
+      "replacement_type": "bool"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 1,
+      "path": [
+        "semantics",
+        "classes",
+        1,
+        0
+      ],
+      "reason": "class identity/order",
+      "replacement": 1.0,
+      "replacement_type": "float"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 1,
+      "path": [
+        "semantics",
+        "classes",
+        1,
+        0
+      ],
+      "reason": "class identity/order",
+      "replacement": true,
+      "replacement_type": "bool"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 0,
+      "path": [
+        "semantics",
+        "representatives",
+        0,
+        0
+      ],
+      "reason": "canonical class representative",
+      "replacement": 0.0,
+      "replacement_type": "float"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 0,
+      "path": [
+        "semantics",
+        "representatives",
+        0,
+        0
+      ],
+      "reason": "canonical class representative",
+      "replacement": false,
+      "replacement_type": "bool"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 1,
+      "path": [
+        "semantics",
+        "representatives",
+        1,
+        0
+      ],
+      "reason": "canonical class representative",
+      "replacement": 1.0,
+      "replacement_type": "float"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 1,
+      "path": [
+        "semantics",
+        "representatives",
+        1,
+        0
+      ],
+      "reason": "canonical class representative",
+      "replacement": true,
+      "replacement_type": "bool"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 0,
+      "path": [
+        "semantics",
+        "buckets",
+        0,
+        0
+      ],
+      "reason": "semantic capacity table",
+      "replacement": 0.0,
+      "replacement_type": "float"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 0,
+      "path": [
+        "semantics",
+        "buckets",
+        0,
+        0
+      ],
+      "reason": "semantic capacity table",
+      "replacement": false,
+      "replacement_type": "bool"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 0,
+      "path": [
+        "semantics",
+        "buckets",
+        0,
+        1
+      ],
+      "reason": "semantic capacity table",
+      "replacement": 0.0,
+      "replacement_type": "float"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 0,
+      "path": [
+        "semantics",
+        "buckets",
+        0,
+        1
+      ],
+      "reason": "semantic capacity table",
+      "replacement": false,
+      "replacement_type": "bool"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 1,
+      "path": [
+        "semantics",
+        "buckets",
+        1,
+        0
+      ],
+      "reason": "semantic capacity table",
+      "replacement": 1.0,
+      "replacement_type": "float"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 1,
+      "path": [
+        "semantics",
+        "buckets",
+        1,
+        0
+      ],
+      "reason": "semantic capacity table",
+      "replacement": true,
+      "replacement_type": "bool"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 0,
+      "path": [
+        "semantics",
+        "buckets",
+        1,
+        1
+      ],
+      "reason": "semantic capacity table",
+      "replacement": 0.0,
+      "replacement_type": "float"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 0,
+      "path": [
+        "semantics",
+        "buckets",
+        1,
+        1
+      ],
+      "reason": "semantic capacity table",
+      "replacement": false,
+      "replacement_type": "bool"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 1,
+      "path": [
+        "semantics",
+        "capacity",
+        0,
+        0
+      ],
+      "reason": "semantic capacity table",
+      "replacement": 1.0,
+      "replacement_type": "float"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 1,
+      "path": [
+        "semantics",
+        "capacity",
+        0,
+        0
+      ],
+      "reason": "semantic capacity table",
+      "replacement": true,
+      "replacement_type": "bool"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 0,
+      "path": [
+        "semantics",
+        "capacity",
+        0,
+        1
+      ],
+      "reason": "semantic capacity table",
+      "replacement": 0.0,
+      "replacement_type": "float"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 0,
+      "path": [
+        "semantics",
+        "capacity",
+        0,
+        1
+      ],
+      "reason": "semantic capacity table",
+      "replacement": false,
+      "replacement_type": "bool"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 0,
+      "path": [
+        "semantics",
+        "capacity",
+        1,
+        0
+      ],
+      "reason": "semantic capacity table",
+      "replacement": 0.0,
+      "replacement_type": "float"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 0,
+      "path": [
+        "semantics",
+        "capacity",
+        1,
+        0
+      ],
+      "reason": "semantic capacity table",
+      "replacement": false,
+      "replacement_type": "bool"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 1,
+      "path": [
+        "semantics",
+        "capacity",
+        1,
+        1
+      ],
+      "reason": "semantic capacity table",
+      "replacement": 1.0,
+      "replacement_type": "float"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 1,
+      "path": [
+        "semantics",
+        "capacity",
+        1,
+        1
+      ],
+      "reason": "semantic capacity table",
+      "replacement": true,
+      "replacement_type": "bool"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 0,
+      "path": [
+        "spectrum",
+        0
+      ],
+      "reason": "omission spectrum",
+      "replacement": 0.0,
+      "replacement_type": "float"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "original": 0,
+      "path": [
+        "spectrum",
+        0
+      ],
+      "reason": "omission spectrum",
+      "replacement": false,
+      "replacement_type": "bool"
+    }
+  ],
+  "count_report": [
+    0,
+    0
+  ],
+  "malformed_layer_cases": [
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "layer": null,
+      "layer_type": "NoneType",
+      "reason": "layer container type"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "layer": 0,
+      "layer_type": "int",
+      "reason": "layer container type"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "layer": false,
+      "layer_type": "bool",
+      "reason": "layer container type"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "layer": 0.0,
+      "layer_type": "float",
+      "reason": "layer container type"
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidCertificate",
+      "layer": "not-a-layer",
+      "layer_type": "str",
+      "reason": "layer container type"
+    }
+  ],
+  "model": {
+    "environment_locked": false,
+    "events": [
+      {
+        "bucket": 0,
+        "context": 0,
+        "kind": 0,
+        "value": 0
+      },
+      {
+        "bucket": 1,
+        "context": 0,
+        "kind": 1,
+        "value": 1
+      }
+    ],
+    "horizon": 1,
+    "min_length": 1,
+    "monitors": [
+      {
+        "guard": {
+          "equals": 1,
+          "field": "value"
+        },
+        "op": "last"
+      }
+    ],
+    "report_modulus": 1,
+    "triggers": [
+      0
+    ]
+  },
+  "scope": "owned schema/session admission; no Android execution or performance claim",
+  "session_alias_cases": [
+    {
+      "accepted": false,
+      "exception_type": "InvalidLog",
+      "good_first": true,
+      "reason": "event index outside alphabet at position 0",
+      "replacement_type": "bool",
+      "sessions": [
+        [
+          0
+        ],
+        [
+          false
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidLog",
+      "good_first": false,
+      "reason": "event index outside alphabet at position 0",
+      "replacement_type": "bool",
+      "sessions": [
+        [
+          false
+        ],
+        [
+          0
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidLog",
+      "good_first": true,
+      "reason": "event index outside alphabet at position 0",
+      "replacement_type": "float",
+      "sessions": [
+        [
+          0
+        ],
+        [
+          0.0
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidLog",
+      "good_first": false,
+      "reason": "event index outside alphabet at position 0",
+      "replacement_type": "float",
+      "sessions": [
+        [
+          0.0
+        ],
+        [
+          0
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidLog",
+      "good_first": true,
+      "reason": "event index outside alphabet at position 0",
+      "replacement_type": "bool",
+      "sessions": [
+        [
+          1
+        ],
+        [
+          true
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidLog",
+      "good_first": false,
+      "reason": "event index outside alphabet at position 0",
+      "replacement_type": "bool",
+      "sessions": [
+        [
+          true
+        ],
+        [
+          1
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidLog",
+      "good_first": true,
+      "reason": "event index outside alphabet at position 0",
+      "replacement_type": "float",
+      "sessions": [
+        [
+          1
+        ],
+        [
+          1.0
+        ]
+      ]
+    },
+    {
+      "accepted": false,
+      "exception_type": "InvalidLog",
+      "good_first": false,
+      "reason": "event index outside alphabet at position 0",
+      "replacement_type": "float",
+      "sessions": [
+        [
+          1.0
+        ],
+        [
+          1
+        ]
+      ]
+    }
+  ],
+  "summary": {
+    "certificate_cases": 26,
+    "certificate_invalid_accepted": 0,
+    "malformed_layer_unexpected_exceptions": 0,
+    "malformed_layers": 5,
+    "session_cases": 8,
+    "session_invalid_accepted": 0
+  },
+  "valid_certificate": {
+    "count_report": [
+      0,
+      0
+    ],
+    "prefix_proof": {
+      "cut": [
+        0
+      ],
+      "matching": [],
+      "prefix": 0
+    },
+    "semantics": {
+      "buckets": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "capacity": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "classes": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "layers": [
+        [
+          [
+            [
+              -1,
+              -1,
+              0
+            ],
+            1,
+            []
+          ]
+        ],
+        [
+          [
+            [
+              -1,
+              0,
+              0
+            ],
+            1,
+            [
+              0
+            ]
+          ],
+          [
+            [
+              -1,
+              1,
+              1
+            ],
+            1,
+            [
+              1
+            ]
+          ]
+        ]
+      ],
+      "representatives": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ]
+    },
+    "spectrum": [
+      0
+    ],
+    "verdict": "forced-incomplete",
+    "witnesses": [
+      {
+        "allocation": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "outcome": 0
+      }
+    ]
+  },
+  "valid_checker_result": {
+    "buckets": 2,
+    "checker_steps": 6,
+    "classes": 2,
+    "max_count_bits": 1,
+    "nodes": 3,
+    "spectrum": [
+      0
+    ],
+    "states": 3,
+    "verdict": "forced-incomplete"
+  },
+  "valid_duplicate_control": {
+    "adapted_report": {
+      "allocation": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "buckets": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "capacity": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "classes": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "count_report": [
+        1,
+        1
+      ],
+      "distinct_traces": 2,
+      "distinct_words": [
+        [
+          0
+        ],
+        [
+          1
+        ]
+      ],
+      "duplicate_sessions_removed": 1,
+      "input_sessions": 3
+    },
+    "sessions": [
+      [
+        0
+      ],
+      [
+        0
+      ],
+      [
+        1
+      ]
+    ]
+  }
+}

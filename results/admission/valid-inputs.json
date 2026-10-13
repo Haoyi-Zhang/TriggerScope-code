@@ -1,0 +1,40 @@
+{
+  "adapter_checker_result": {
+    "buckets": 8,
+    "checker_steps": 696,
+    "classes": 10,
+    "max_count_bits": 10,
+    "nodes": 129,
+    "spectrum": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "states": 53,
+    "verdict": "forced-incomplete"
+  },
+  "adapter_distinct_traces": 6,
+  "adapter_log_identifier": "MY_SUPER_LOG",
+  "adapter_model": "data/androlog-format-fixture/model.json",
+  "adapter_probe_map": "data/androlog-format-fixture/probe-map.json",
+  "adapter_sessions": "data/androlog-format-fixture/sessions",
+  "authored_adapter_before_after_equal": true,
+  "before_after_routing_equal": true,
+  "cardinality_complete_vs_matching_disagreements": 0,
+  "cardinality_extra_finite_branches": 42,
+  "cardinality_spectrum_disagreement_cases": 28,
+  "catalogue_queries": 9792,
+  "catalogue_sufficiency_disagreements": 2,
+  "circulation_spectrum_disagreements": 0,
+  "hidden_allocation_used_by_decision": false,
+  "matching_spectrum_disagreements": 0,
+  "native_android_execution": false,
+  "next_candidate_disagreements": 0,
+  "primary_cases": 2448,
+  "raw_routing_reference": "results/summary_audit.json",
+  "retained_routing_equal": true,
+  "same_information": "ordered source capacities and exact distinct-trace partition counts only",
+  "scope": "portable replay of retained certificates and same-information routing, not full campaign regeneration"
+}
