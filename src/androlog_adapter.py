@@ -300,7 +300,14 @@ def _load_json_object(path: Path, label: str) -> dict:
             payload = handle.read(MAX_CONFIG_BYTES + 1)
         if len(payload) > MAX_CONFIG_BYTES:
             raise InvalidLog(f"{label} exceeds {MAX_CONFIG_BYTES} bytes")
-        value = json.loads(payload.decode("utf-8", errors="strict"))
+        def unique_pairs(pairs):
+            value = {}
+            for key, item in pairs:
+                if key in value:
+                    raise InvalidLog(f"{label} contains duplicate JSON key: {key}")
+                value[key] = item
+            return value
+        value = json.loads(payload.decode("utf-8", errors="strict"), object_pairs_hook=unique_pairs)
     except (OSError, UnicodeError, json.JSONDecodeError) as exc:
         raise InvalidLog(f"cannot read {label}: {exc}") from exc
     finally:
