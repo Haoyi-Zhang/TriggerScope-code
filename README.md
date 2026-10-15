@@ -20,6 +20,7 @@ All commands below are offline. Output directories must not already exist.
 From this repository root:
 
 ```sh
+export PYTHONDONTWRITEBYTECODE=1
 python reproduce.py --output /tmp/trigger-coverage-reproduction
 ```
 
@@ -133,9 +134,11 @@ the full routing result and adapter result are unchanged. The primary
 cardinality null, two catalogue-sufficiency differences and zero next-candidate
 differences remain. No hidden allocation is supplied to routing.
 
-All 31 portable tests pass in normal and optimized mode on Windows/Python
+The retained 31-test portable run passed in normal and optimized mode on Windows/Python
 3.12.14. These executions have no POSIX address-space/CPU limit, do not rerun
 the complete historical campaign, and leave its result files and timings intact.
+The current discovered inventory includes the later duplicate-configuration-key
+regressions; use the portable command above for its current test count.
 The admission records do not add device observations, native Android execution
 or a demonstrated diagnostic scheduling gain.
 
